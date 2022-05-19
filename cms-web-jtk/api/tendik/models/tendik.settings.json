@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tendiks",
+  "info": {
+    "name": "pegawai",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "nip": {
+      "type": "string",
+      "private": false,
+      "unique": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "no_hp": {
+      "type": "string"
+    }
+  }
+}

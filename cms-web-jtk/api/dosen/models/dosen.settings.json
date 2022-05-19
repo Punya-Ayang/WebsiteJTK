@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dosens",
+  "info": {
+    "name": "dosen"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kbk": {
+      "type": "string"
+    }
+  }
+}
