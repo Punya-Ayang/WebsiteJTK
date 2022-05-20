@@ -49,6 +49,11 @@
   </v-app>
 </template>
 
+<style>
+.v-application--wrap{
+  min-height: unset;
+}
+</style>
 <script>
 export default{
   data () {
