@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "struktur_mata_kuliahs",
+  "info": {
+    "name": "Struktur Mata Kuliah",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "prodi": {
+      "type": "enumeration",
+      "enum": [
+        "D3",
+        "D4"
+      ]
+    },
+    "semester": {
+      "type": "integer"
+    },
+    "mata_kuliah": {
+      "collection": "mata-kuliah"
+    }
+  }
+}

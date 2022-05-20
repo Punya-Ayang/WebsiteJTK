@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mata_kuliahs",
+  "info": {
+    "name": "Mata Kuliah"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_mata_kuliah": {
+      "type": "string"
+    },
+    "deskripsi": {
+      "type": "text"
+    },
+    "sks_t": {
+      "type": "integer"
+    },
+    "sks_p": {
+      "type": "integer"
+    },
+    "kode": {
+      "type": "string"
+    }
+  }
+}

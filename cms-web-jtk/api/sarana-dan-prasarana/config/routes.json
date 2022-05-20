@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sarana-dan-prasarana",
+      "handler": "sarana-dan-prasarana.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sarana-dan-prasarana",
+      "handler": "sarana-dan-prasarana.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sarana-dan-prasarana",
+      "handler": "sarana-dan-prasarana.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
