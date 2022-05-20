@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "profil_jurusans",
+  "info": {
+    "name": "Profil Jurusan"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Judul": {
+      "type": "string"
+    },
+    "profil": {
+      "type": "richtext"
+    },
+    "visi_dan_misi": {
+      "type": "richtext"
+    }
+  }
+}

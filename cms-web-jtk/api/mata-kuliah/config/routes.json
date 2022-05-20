@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mata-kuliahs",
+      "handler": "mata-kuliah.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mata-kuliahs/count",
+      "handler": "mata-kuliah.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mata-kuliahs/:id",
+      "handler": "mata-kuliah.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mata-kuliahs",
+      "handler": "mata-kuliah.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mata-kuliahs/:id",
+      "handler": "mata-kuliah.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mata-kuliahs/:id",
+      "handler": "mata-kuliah.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

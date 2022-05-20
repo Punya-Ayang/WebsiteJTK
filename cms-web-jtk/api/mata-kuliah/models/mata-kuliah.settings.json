@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "dosens",
+  "collectionName": "mata_kuliahs",
   "info": {
-    "name": "dosen",
-    "description": ""
+    "name": "Mata Kuliah"
   },
   "options": {
     "increments": true,
@@ -12,18 +11,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "nama": {
+    "nama_mata_kuliah": {
       "type": "string"
     },
-    "nip": {
-      "type": "string",
-      "required": true,
-      "unique": true
+    "deskripsi": {
+      "type": "text"
     },
-    "email": {
-      "type": "email"
+    "sks_t": {
+      "type": "integer"
     },
-    "no_hp": {
+    "sks_p": {
+      "type": "integer"
+    },
+    "kode": {
       "type": "string"
     }
   }
