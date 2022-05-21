@@ -7,6 +7,7 @@ import DaftarPrestasiView from '../views/DaftarPrestasiView.vue'
 import DetailGalleryView from '../views/DetailGalleryView.vue'
 import ProfilePegawaiView from '../views/ProfilePegawaiView.vue'
 import ProfileTendikView from '../views/ProfileTendikView.vue'
+import ProfileProdD3View from '../views/ProfileProdD3View.vue'
 
 Vue.use(VueRouter)
 
@@ -50,6 +51,12 @@ const routes = [
     path: '/ProfileTendik',
     name: 'ProfileTendikView',
     component: ProfileTendikView
+    
+  },
+  {
+    path: '/profile-prodi-D3',
+    name: 'ProfileProdD3View',
+    component: ProfileProdD3View
     
   },
   {
