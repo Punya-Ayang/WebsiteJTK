@@ -25,6 +25,18 @@
     },
     "no_hp": {
       "type": "string"
+    },
+    "mata_kuliah_diampu": {
+      "collection": "mata-kuliah"
+    },
+    "bidang_keilmuan": {
+      "model": "bidang-keilmuan"
+    },
+    "penelitian_dosens": {
+      "collection": "penelitian-dosen"
+    },
+    "publikasi_dosens": {
+      "collection": "publikasi-dosen"
     }
   }
 }

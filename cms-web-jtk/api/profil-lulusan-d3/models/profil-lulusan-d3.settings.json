@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "profil_lulusan_d3s",
+  "info": {
+    "name": "Profil Lulusan D3"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

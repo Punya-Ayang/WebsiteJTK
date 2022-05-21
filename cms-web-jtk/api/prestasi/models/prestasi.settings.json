@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prestasis",
+  "info": {
+    "name": "Prestasi",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul_prestasi": {
+      "type": "string"
+    },
+    "tanggal_prestasi": {
+      "type": "date"
+    },
+    "skala_prestasi": {
+      "type": "enumeration",
+      "enum": [
+        "Apresiasi",
+        "Domestik",
+        "Nasional",
+        "Internasional"
+      ]
+    },
+    "deskripsi_prestasi": {
+      "type": "richtext"
+    },
+    "media_prestasi": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "jenis_prestasi": {
+      "type": "enumeration",
+      "enum": [
+        "Mahasiswa",
+        "Dosen"
+      ]
+    }
+  }
+}

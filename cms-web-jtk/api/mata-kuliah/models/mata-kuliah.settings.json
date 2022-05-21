@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "mata_kuliahs",
   "info": {
-    "name": "Mata Kuliah"
+    "name": "Mata Kuliah",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -25,6 +26,9 @@
     },
     "kode": {
       "type": "string"
+    },
+    "prerequisted_mata_kuliah": {
+      "collection": "mata-kuliah"
     }
   }
 }

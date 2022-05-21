@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/penelitian-dosens",
+      "handler": "penelitian-dosen.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/penelitian-dosens/count",
+      "handler": "penelitian-dosen.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/penelitian-dosens/:id",
+      "handler": "penelitian-dosen.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/penelitian-dosens",
+      "handler": "penelitian-dosen.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/penelitian-dosens/:id",
+      "handler": "penelitian-dosen.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/penelitian-dosens/:id",
+      "handler": "penelitian-dosen.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
