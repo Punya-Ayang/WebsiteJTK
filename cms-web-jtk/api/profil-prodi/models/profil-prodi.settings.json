@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "profil_prodis",
+  "info": {
+    "name": "Profil Prodi"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "deskripsi_profil_d3": {
+      "type": "richtext"
+    },
+    "deskripsi_profil_d4": {
+      "type": "richtext"
+    }
+  }
+}

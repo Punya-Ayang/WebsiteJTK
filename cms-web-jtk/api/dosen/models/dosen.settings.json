@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dosens",
+  "info": {
+    "name": "dosen",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "nip": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "no_hp": {
+      "type": "string"
+    }
+  }
+}

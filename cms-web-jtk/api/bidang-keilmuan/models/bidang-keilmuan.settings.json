@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bidang_keilmuans",
+  "info": {
+    "name": "Bidang Keilmuan",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bidang": {
+      "type": "string"
+    }
+  }
+}

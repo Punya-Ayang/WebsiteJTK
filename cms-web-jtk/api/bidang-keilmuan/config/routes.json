@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bidang-keilmuans",
+      "handler": "bidang-keilmuan.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bidang-keilmuans/count",
+      "handler": "bidang-keilmuan.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bidang-keilmuans/:id",
+      "handler": "bidang-keilmuan.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bidang-keilmuans",
+      "handler": "bidang-keilmuan.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bidang-keilmuans/:id",
+      "handler": "bidang-keilmuan.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bidang-keilmuans/:id",
+      "handler": "bidang-keilmuan.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

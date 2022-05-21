@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tendiks",
+      "handler": "tendik.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tendiks/count",
+      "handler": "tendik.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tendiks/:id",
+      "handler": "tendik.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tendiks",
+      "handler": "tendik.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tendiks/:id",
+      "handler": "tendik.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tendiks/:id",
+      "handler": "tendik.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
