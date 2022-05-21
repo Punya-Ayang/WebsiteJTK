@@ -1,7 +1,7 @@
 <template>
     <div id="landing-page">
         <Navbar />
-        <landingPg />
+        <DaftarPrestasiJTK />
         <Footer />
     </div>
 </template>
@@ -9,15 +9,15 @@
 <script>
 import Vue from "vue";
 import Navbar from "../components/Navbar.vue";
-import landingPg from "../components/landing-page/landingPg.vue";
 import Footer from "../components/Footer.vue";
+import DaftarPrestasiJTK from "../components/DaftarPrestasiJTK.vue";
 
 export default Vue.extend({
     components:{
-        Navbar,
-        landingPg,
-        Footer
-    },
-    name:"LandingPage",
+    Navbar,
+    Footer,
+    DaftarPrestasiJTK
+},
+    name:"DaftarPrestasiJTKView",
 });
 </script>
