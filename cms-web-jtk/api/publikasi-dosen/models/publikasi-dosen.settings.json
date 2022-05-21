@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "publikasi_dosens",
+  "info": {
+    "name": "Publikasi Dosen"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul_publikasi": {
+      "type": "string"
+    },
+    "link_publikasi": {
+      "type": "string"
+    }
+  }
+}

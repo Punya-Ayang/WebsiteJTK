@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kerja_samas",
+  "info": {
+    "name": "Kerja Sama"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judl_kerja_sama": {
+      "type": "string"
+    },
+    "tanggal_kerjasama": {
+      "type": "date"
+    },
+    "deskripsi_kerjasama": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/profil-lulusan-d-3",
+      "handler": "profil-lulusan-d3.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/profil-lulusan-d-3",
+      "handler": "profil-lulusan-d3.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/profil-lulusan-d-3",
+      "handler": "profil-lulusan-d3.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

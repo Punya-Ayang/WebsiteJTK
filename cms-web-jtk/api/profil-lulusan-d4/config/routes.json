@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/profil-lulusan-d-4",
+      "handler": "profil-lulusan-d4.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/profil-lulusan-d-4",
+      "handler": "profil-lulusan-d4.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/profil-lulusan-d-4",
+      "handler": "profil-lulusan-d4.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

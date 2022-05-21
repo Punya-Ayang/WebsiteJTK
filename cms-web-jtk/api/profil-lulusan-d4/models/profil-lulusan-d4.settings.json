@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "profil_lulusan_d4s",
+  "info": {
+    "name": "Profil Lulusan D4"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

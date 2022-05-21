@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "penelitian_dosens",
+  "info": {
+    "name": "Penelitian Dosen",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul_penelitian": {
+      "type": "string"
+    },
+    "penyandang_dana": {
+      "type": "string"
+    },
+    "tahun": {
+      "type": "string"
+    }
+  }
+}

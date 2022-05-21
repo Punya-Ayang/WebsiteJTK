@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/publikasi-dosens",
+      "handler": "publikasi-dosen.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/publikasi-dosens/count",
+      "handler": "publikasi-dosen.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/publikasi-dosens/:id",
+      "handler": "publikasi-dosen.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/publikasi-dosens",
+      "handler": "publikasi-dosen.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/publikasi-dosens/:id",
+      "handler": "publikasi-dosen.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/publikasi-dosens/:id",
+      "handler": "publikasi-dosen.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
