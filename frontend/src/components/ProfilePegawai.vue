@@ -1,52 +1,5 @@
 <template>
   <v-app id="inspire">
-
-      <v-toolbar dark color="#003399" style="max-height:10vh;">
-      <v-toolbar-title class="white--text">
-        <div class="image" style="max-width: 8vw; min-width:1vw;height: 3.5vw;">
-          <img class="logo" src="../assets/logoPolban.png" width="50x">
-        </div>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items>
-         <v-tab
-         v-for="item in nav"
-           :key="item.icon"
-           to="#"
-           :title="item.title"
-           flat
-         >{{ item.text }}
-         </v-tab>
-      </v-toolbar-items>
-      <v-layout 
-      row align-center style="max-width: 15vw; min-width:1vw;"
-      class="mx-4">
-        <v-text-field
-          filled
-          rounded
-          dense
-          label="Search"
-          single-line
-          background-color="#00000"
-          color="black"
-          hide-details
-        >
-        <v-icon style="#00000">mdi-magnify</v-icon>
-        </v-text-field>
-      </v-layout>
-      <v-col
-      class="mx-1"
-      style="max-width: 8vw; min-width:1vw;height: 4.5vw;"
-      >
-        <v-select
-          :items="items"
-          label="IDN"
-          dense
-          solo
-          color="#fffff"
-        ></v-select>
-      </v-col>
-    </v-toolbar>
  <v-content>
      <v-section>
          <div flex-column mb-6>
@@ -86,44 +39,13 @@
                 </v-card-text>
             </v-card>
     </v-section>
-<v-footer
-  padless>
-    <v-card width="1920px" height="250px" color="#003294">
-
-    </v-card>
-    <v-card width="1920px" color="#10203F">
-      <v-card-text class="text-center">
-        Jurusan Teknik Komputer dan Informatika Politeknik Negeri Bandung
-      </v-card-text>
-    </v-card>
-  </v-footer>
  </v-content>
   </v-app>
 </template>
 
 <script>
 export default{
-  data () {
-    return {
-      dialog: false,
-      nav: [
-        {
-          text: 'Tentang JTK'
-        },
-        {
-          text: 'Akademik'
-        },
-        {
-          text: 'Article News'
-        },
-        {
-          text: 'Gallery'
-        },
-        {
-          text: 'Tracer Study'
-        }
-      ]
-    }
-  }
+  
+
 };
 </script>

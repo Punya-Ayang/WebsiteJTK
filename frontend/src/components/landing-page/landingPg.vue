@@ -3,23 +3,22 @@
     <v-content>
       <section>
         <v-parallax
-        class="landingPage" src="../../assets/Landing.png" height="727">
+        class="landingPage" src="../../assets/Landing.png" height="700">
         </v-parallax>
       </section>
       <section>
-        <v-layout
-          column
-          wrap
-          class="my-5"
-          align-center>
-          <div class="text-xs-center">
-            <h2 class="headline" style="font: size 100px;; color:#003399 ;">Artikel Terkini</h2>
-          </div>
-        </v-layout>
+        
+        <div style="
+        color: #003399;
+        height: 50px;
+        font-size: x-large;">
+          <h1 class="headline text-md-center pt-5">Artikel Terkini</h1>
+        </div>
+
         <v-row no-gutters>
           <v-col
-            v-for="n in 3"
-            :key="n"
+            v-for="(item, i) in items"
+            :key="i"
             cols="12"
             sm="4"
           >
@@ -30,11 +29,12 @@
           >
           <v-img
             height="250"
-            src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+            :src="item.src"
           ></v-img>
-          <v-card-title>JTK Berhasil Meraih Emas di Pimnas</v-card-title>
-          <v-card-text>
-            <div>Bandung (2/10), Pekan Ilmiah Nasional atau Pimnas telah selesai diselenggarakan...</div>
+          <v-card-title v-text="item.title"></v-card-title>
+          <v-card-text
+          v-text="item.artikel"
+          >
           </v-card-text>
         </v-card>
         </v-col>
@@ -42,38 +42,50 @@
       </section>
 
       <section>
-        <v-card color="#003399"
-        style="
-              width: 1920px;
-              height: 250px"
-        >
-          <v-card-title class="title">Tentang JTK</v-card-title>
-          <v-card-text>{Jurusan Teknik Komputer dan Informatika atau yang sering disebut JTK berdiri sejak tahun XXXX. Lorem ipsum dolor sit amet}</v-card-text>
-        </v-card>
+
+        <div style="
+        background-color: #003399; 
+        color: white;
+        height: 407px;
+        font-size: x-large;">
+        <h1 class="text-md-center pt-5">Tentang JTK</h1>
+        <p class="text-md-center pt-10">
+          Jurusan Teknik Komputer dan Informatika Politeknik Negeri Bandung (lebih dikenal dengan singkatan JTK) merupakan jurusan penyelenggara pendidikan diploma bidang teknologi informasi pertama di Indonesia. Jurusan ini telah menyelenggarakan pendidikan D-3 bidang teknik komputer dan informatika sejak 1977 dan pendidikan D-4 sejak 2009.
+        </p>
+        <p class="text-md-center pt-5">
+          Dengan daya tampung sekitar 96 mahasiswa per tahun, sampai saat ini JTK telah menghasilkan lebih dari 2.500 alumni yang bekerja pada berbagai sektor industri, baik di dalam maupun di luar negeri.
+        </p>
+        </div>
       </section>
 
-       <section >
+       <section
+       style="
+       background-color: #E7E9ED;
+       "
+       >
         <v-layout
           column
           wrap
-          class="my-5"
           align-center
         >
-          <v-flex xs12 sm4 class="my-3" >
-            <div class="text-xs-center">
+          <div 
+          class="text-md-center pt-5"
+          style="
+          color: #003399;
+          font-size: x-large;">
               <h1 class="headline">Akademik</h1>
-              <span class="subheading">
-                Jurusan Teknik Komputer dan Informatika atau yang sering disebut JTK berdiri sejak tahun XXXX. Lorem ipsum dolor sit amet
-              </span>
-            </div>
-          </v-flex>
+              <p class="subheading">
+                Jurusan pertama yang menyelenggarakan pendidikan profesional bidang teknologi informasi, JTK selalu dijadikan tolok ukur dan telah banyak memberikan bantuan teknis dan non-teknis kepada institusi lain maupun kepada masyarakat umum
+              </p>
+          </div>
+
           <v-flex xs12>
             <v-container grid-list-xl>
               <v-layout row wrap align-center>
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <img class="logo" src="https://cdn.vuetifyjs.com/images/cards/cooking.png" width="274px">
+                      <img class="logo" src="../../assets/MengapaJTK.png" width="274px">
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Mengapa JTK?</div>
@@ -81,12 +93,12 @@
                     <v-card-text>
                      Take courses from the world’s best instructors and universities. 
                     </v-card-text>
-                  </v-card>
+                  </v-card> 
                 </v-flex>
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <img class="logo" src="https://cdn.vuetifyjs.com/images/cards/cooking.png" width="274px">
+                      <img class="logo" src="../../assets/TentangProdi.png" width="274px">
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline">Tentang Prodi</div>
@@ -99,7 +111,7 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <img class="logo" src="https://cdn.vuetifyjs.com/images/cards/cooking.png" width="274px">
+                      <img class="logo" src="../../assets/KuliahdiJTK.png" width="274px">
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline text-xs-center">Bagaimana kuliah di JTK</div>
@@ -115,16 +127,20 @@
         </v-layout>
       </section>
 
-      <section>
-        <v-layout
-          column
-          wrap
-          class="my-5"
-          align-center>
-          <div class="text-xs-center">
-            <h2 class="headline" style="font: size 100px;; color:#003399;">Agenda</h2>
+      <section
+       style="
+       background-color: #EEEEEE;
+       height: 350px;
+       "
+       >
+          <div 
+          class="text-md-center pt-10 pb-10"
+          style="
+          color: #003399;
+          font-size: x-large;">
+          <h1>Agenda</h1>
           </div>
-        </v-layout>
+
         <v-row no-gutters>
           <v-col
             v-for="n in 3"
@@ -155,7 +171,7 @@
           </v-col>
         </v-row>
         
-        <v-col class="px-100">
+        <v-col class="px-100 pt-10">
           <div class="text-center">
             <v-btn
               small
@@ -170,19 +186,17 @@
       <v-spancer></v-spancer>
 
       <section>
-        <v-layout
-          column
-          wrap
-          class="my-5"
-          align-center>
-          <div class="text-xs-center">
-            <h2 class="headline" style="font: size 100px; color:#003399;">Gallery</h2>
+          <div 
+          class="text-md-center pt-10"
+          style="
+          color: #003399;
+          font-size: x-large;">
+          <h1>Gallery</h1>
           </div>
-        </v-layout>
          <v-row no-gutters>
           <v-col
-             v-for="n in 3"
-            :key="n"
+           v-for="(item, i) in gallery"
+           :key="i"
             cols="6"
             sm="4"
           >
@@ -193,13 +207,13 @@
           >
           <v-img
             height="250"
-            src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+            :src="item.src"
           ></v-img>
            </v-card>
           </v-col>
           </v-row>
 
-          <v-col class="px-100">
+          <v-col class="px-100 pb-10">
           <div class="text-center">
             <v-btn
               small
@@ -215,6 +229,44 @@
   </v-app>
 </template>
 
-<script>
+<style>
 
+</style>
+<script>
+export default{
+el: '#app',
+  data () {
+    return {
+      dialog: false,
+      items:[
+        {
+          src: 'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
+          title: 'JTK Memperoleh 3 Medali pada PIMNAS',
+          artikel: 'Bandung (2/10), Pekan Ilmiah Nasional atau Pimnas telah selesai diselenggarakan...'
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
+          title: 'JTK Memperoleh 3 Medali pada PIMNAS',
+          artikel: 'Bandung (2/10), Pekan Ilmiah Nasional atau Pimnas telah selesai diselenggarakan...'
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
+          title: 'JTK Memperoleh 3 Medali pada PIMNAS',
+          artikel: 'Bandung (2/10), Pekan Ilmiah Nasional atau Pimnas telah selesai diselenggarakan...'
+        }
+      ],
+      gallery:[
+        {
+          src:'../../assets/gallery1.png'
+        },
+        {
+          src:'../../assets/gallery1.png'
+        },
+        {
+         src:'../../assets/gallery1.png'
+        }
+      ]
+    }
+  }
+};
 </script>

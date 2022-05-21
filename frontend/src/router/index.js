@@ -1,20 +1,56 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import About from '../views/About.vue'
+import LandingPage from '../views/LandingPage.vue'
+import GalleryView from '../views/GalleryView.vue'
+import ArtikelDaftarPrestasiView from '../views/ArtikelDaftarPrestasiView.vue'
+import DaftarPrestasiView from '../views/DaftarPrestasiView.vue'
+import DetailGalleryView from '../views/DetailGalleryView.vue'
+import ProfilePegawaiView from '../views/ProfilePegawaiView.vue'
+import ProfileTendikView from '../views/ProfileTendikView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'WebsiteJTK',
-    component: Home
+    name: 'LandingPage',
+    component: LandingPage
   },
   {
-    path: '/about',
-    name: 'About',
-    component: About
+    path: '/gallery',
+    name: 'GalleryView',
+    component: GalleryView
+    
+  },
+  {
+    path: '/artikelDaftarPrestasi',
+    name: 'ArtikelDaftarPrestasiView',
+    component: ArtikelDaftarPrestasiView
+    
+  },
+  {
+    path: '/DaftarPrestasi',
+    name: 'DaftarPrestasiView',
+    component: DaftarPrestasiView
+    
+  },
+  {
+    path: '/DetailGallery',
+    name: 'DetailGalleryView',
+    component: DetailGalleryView
+    
+  },
+  {
+    path: '/ProfilePegawai',
+    name: 'ProfilePegawaiView',
+    component: ProfilePegawaiView
+    
+  },
+  {
+    path: '/ProfileTendik',
+    name: 'ProfileTendikView',
+    component: ProfileTendikView
+    
   },
   {
     path: "/:catchAll(.*)",
@@ -27,6 +63,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes
 })
 
