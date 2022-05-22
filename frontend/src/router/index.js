@@ -21,6 +21,7 @@ import KurikulumView from '../views/KurikulumView.vue'
 import ProfileLulusanD3 from '../views/ProfileLulusanD3.vue'
 import ArtikelDetailKerjaSama from '../views/ArtikelDetailKerjaSama.vue'
 import ProfileDosenView from '../views/ProfileDosenView.vue'
+import DetailArtikelUmumView from '../views/DetailArtikelUmumView.vue'
 
 Vue.use(VueRouter)
 Vue.use(lightbox)
@@ -134,6 +135,12 @@ const routes = [
     path: '/kurikulum-profil-lulusan-d4',
     name: 'KurikulumProfilLulusanD4View',
     component: KurikulumProfilLulusanD4View
+    
+  },
+  {
+    path: '/detail-artikel-umum',
+    name: 'DetailArtikelUmumView',
+    component: DetailArtikelUmumView
     
   },
   {
