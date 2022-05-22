@@ -2,10 +2,9 @@
 <v-app id="inspire">
     <v-content>
         <section>
-            <div class="mt-lg-4"></div>
                 <!-- <v-container fluid class="grey lighten-5" style="height: 15vh; font-size: xx-large;text-align: center; color: #003399;"> -->
-                <h1 class="text-no-wrap grey pt-lg-8 " style="width: 80rem; grey lighten-9 height: 15vh; font-size: xx-large;text-align: center; color: #003399;">Profil Prodi D3 Teknik Informatika</h1>
-
+                <h1 class="text-no-wrap grey lighten-5 pb-lg-4 pt-lg-2 " style="width: 100rem; grey lighten-9 height: 15vh; font-size: xx-large;text-align: center; color: #003399;">Profil Prodi D3 Teknik Informatika</h1>
+                <div class="mb-lg-4"></div>
         </section>
         <v-spacer></v-spacer>
 

@@ -8,6 +8,7 @@ import DetailGalleryView from '../views/DetailGalleryView.vue'
 import ProfilePegawaiView from '../views/ProfilePegawaiView.vue'
 import ProfileTendikView from '../views/ProfileTendikView.vue'
 import ProfileProdD3View from '../views/ProfileProdD3View.vue'
+import AgendaView from '../views/AgendaView.vue'
 
 Vue.use(VueRouter)
 
@@ -57,6 +58,12 @@ const routes = [
     path: '/profile-prodi-D3',
     name: 'ProfileProdD3View',
     component: ProfileProdD3View
+    
+  },
+  {
+    path: '/agenda',
+    name: 'AgendaView',
+    component: AgendaView
     
   },
   {
