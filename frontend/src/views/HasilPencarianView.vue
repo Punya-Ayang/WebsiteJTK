@@ -1,7 +1,12 @@
 <template>
-  <div id="daftar-prestasi">
+  <div id="hasil-pencarian">
     <Navbar />
-    <DaftarPrestasiJTK v-bind="props" />
+    <div v-if="props.items.length === 0">
+      <DaftarPencarian v-bind:title="props.title" v-bind:subtitle="props.subtitle" />
+    </div>
+    <div v-else>
+      <DaftarPencarian v-bind="props" />
+    </div>
     <Footer />
   </div>
 </template>
@@ -10,21 +15,24 @@
 import Vue from "vue";
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
-import DaftarPrestasiJTK from "../components/Daftar.vue";
+import DaftarPencarian from "../components/Daftar.vue";
 
 export default Vue.extend({
   components: {
     Navbar,
     Footer,
-    DaftarPrestasiJTK,
+    DaftarPencarian,
   },
   data() {
     return {
       props: {
-        title: "Daftar Prestasi JTK",
+        title: "Hasil Pencarian",
+        subtitle: "Menampilkan Hasil Pencarian dari “PIMNAS”",
         page: 1,
         dialog: false,
-        items: [
+        items: 
+        //[]
+        [
           {
             src: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
             title: "JTK Memperoleh 3 Medali pada PIMNAS",
@@ -53,6 +61,6 @@ export default Vue.extend({
       },
     };
   },
-  name: "DaftarPrestasiJTKView",
+  name: "HasilPencarianView",
 });
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div id="daftar-prestasi">
     <Navbar />
-    <DaftarPrestasiJTK v-bind="props" />
+    <DaftarArtikelUmum v-bind="props" />
     <Footer />
   </div>
 </template>
@@ -10,18 +10,18 @@
 import Vue from "vue";
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
-import DaftarPrestasiJTK from "../components/Daftar.vue";
+import DaftarArtikelUmum from "../components/Daftar.vue";
 
 export default Vue.extend({
   components: {
     Navbar,
     Footer,
-    DaftarPrestasiJTK,
+    DaftarArtikelUmum,
   },
   data() {
     return {
       props: {
-        title: "Daftar Prestasi JTK",
+        title: "Artikel",
         page: 1,
         dialog: false,
         items: [

@@ -9,6 +9,10 @@ import ProfilePegawaiView from '../views/ProfilePegawaiView.vue'
 import ProfileTendikView from '../views/ProfileTendikView.vue'
 import ProfileProdD3View from '../views/ProfileProdD3View.vue'
 import AgendaView from '../views/AgendaView.vue'
+import SaranaPrasaranaView from '../views/SaranaPrasaranaView'
+import DaftarArtikelUmumView from '../views/DaftarArtikelUmumView'
+import DaftarKerjaSamaView from '../views/DaftarKerjaSamaView'
+import HasilPencarianView from '../views/HasilPencarianView'
 
 Vue.use(VueRouter)
 
@@ -22,49 +26,66 @@ const routes = [
     path: '/gallery',
     name: 'GalleryView',
     component: GalleryView
-    
+
   },
   {
-    path: '/artikelDaftarPrestasi',
+    path: '/artikel-daftar-prestasi',
     name: 'ArtikelDaftarPrestasiView',
     component: ArtikelDaftarPrestasiView
-    
+
   },
   {
-    path: '/DaftarPrestasi',
+    path: '/daftar-prestasi',
     name: 'DaftarPrestasiView',
     component: DaftarPrestasiView
-    
+
   },
   {
-    path: '/DetailGallery',
+    path: '/detail-gallery',
     name: 'DetailGalleryView',
     component: DetailGalleryView
-    
+
   },
   {
-    path: '/ProfilePegawai',
+    path: '/profile-pegawai',
     name: 'ProfilePegawaiView',
     component: ProfilePegawaiView
-    
+
   },
   {
-    path: '/ProfileTendik',
+    path: '/profile-tendik',
     name: 'ProfileTendikView',
     component: ProfileTendikView
-    
   },
   {
     path: '/profile-prodi-D3',
     name: 'ProfileProdD3View',
     component: ProfileProdD3View
-    
   },
   {
     path: '/agenda',
     name: 'AgendaView',
     component: AgendaView
-    
+  },
+  {
+    path: '/sarana-prasarana',
+    name: 'SaranaPrasaranaView',
+    component: SaranaPrasaranaView
+  },
+  {
+    path: '/daftar-artikel',
+    name: 'DaftarArtikelUmumView',
+    component: DaftarArtikelUmumView
+  },
+  {
+    path: '/daftar-kerja-sama',
+    name: 'DaftarKerjaSamaView',
+    component: DaftarKerjaSamaView
+  },
+  {
+    path: '/hasil-pencarian',
+    name: 'HasilPencarianView',
+    component: HasilPencarianView
   },
   {
     path: "/:catchAll(.*)",
