@@ -10,6 +10,7 @@ import ProfileTendikView from '../views/ProfileTendikView.vue'
 import ProfileProdD3View from '../views/ProfileProdD3View.vue'
 import AgendaView from '../views/AgendaView.vue'
 import DetailAgendaView from '../views/DetailAgendaView.vue'
+import KurikulumProfilLulusanD4View from '../views/KurikulumProfilLulusanD4View.vue'
 
 Vue.use(VueRouter)
 
@@ -71,6 +72,12 @@ const routes = [
     path: '/detail-agenda',
     name: 'DetailAgendaView',
     component: DetailAgendaView
+    
+  },
+  {
+    path: '/kurikulum-profil-lulusan-d4',
+    name: 'KurikulumProfilLulusanD4View',
+    component: KurikulumProfilLulusanD4View
     
   },
   {
