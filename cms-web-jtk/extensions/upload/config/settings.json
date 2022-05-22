@@ -1,0 +1,8 @@
+{
+  "provider": "cloudinary",
+  "providerOptions": {
+    "cloud_name": "marssn",
+    "api_key": "731371958371537",
+    "api_secret": "0ah4oS9neH3k1V_UapxXPaHooiQ"
+  }
+}
