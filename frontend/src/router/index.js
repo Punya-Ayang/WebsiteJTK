@@ -21,6 +21,7 @@ import KurikulumView from '../views/KurikulumView.vue'
 import ProfileLulusanD3 from '../views/ProfileLulusanD3.vue'
 import ArtikelDetailKerjaSama from '../views/ArtikelDetailKerjaSama.vue'
 import ProfileDosenView from '../views/ProfileDosenView.vue'
+import StrukturMatkulD3 from '../views/StrukturMatkulD3.vue'
 
 Vue.use(VueRouter)
 Vue.use(lightbox)
@@ -136,6 +137,12 @@ const routes = [
     component: KurikulumProfilLulusanD4View
     
   },
+  {
+    path: '/struktur-matkul-d3',
+    name: 'StrukturMatkulD3',
+    component: StrukturMatkulD3
+    
+  },  
   {
     path: "/:catchAll(.*)",
     redirect: () => {

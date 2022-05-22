@@ -88,7 +88,7 @@
                       <img class="logo" src="../../assets/MengapaJTK.png" width="274px">
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Mengapa JTK?</div>
+                      <div class=" text-xs-center">Mengapa JTK?</div>
                     </v-card-title>
                     <v-card-text>
                      Take courses from the world’s best instructors and universities. 
@@ -101,7 +101,7 @@
                       <img class="logo" src="../../assets/TentangProdi.png" width="274px">
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline">Tentang Prodi</div>
+                      <div class="">Tentang Prodi</div>
                     </v-card-title>
                     <v-card-text>
                       Take courses from the world’s best instructors and universities. 
@@ -114,7 +114,7 @@
                       <img class="logo" src="../../assets/KuliahdiJTK.png" width="274px">
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Bagaimana kuliah di JTK</div>
+                      <div class=" text-xs-center">Bagaimana kuliah di JTK</div>
                     </v-card-title>
                     <v-card-text>
                       Learn your favourite course with world-class instructors.
