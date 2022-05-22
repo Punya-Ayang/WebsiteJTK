@@ -1,9 +1,9 @@
 <template>
-  <v-app id="inspire">
+  <v-app id="profile-dosen">
  <v-content>
      <v-section>
-         <div class="prof-tndk">
-            <h1>Profile Tendik</h1>
+         <div class="prof-dsn">
+            <h1>Profile Dosen</h1>
          </div>
      </v-section>
     <v-container class="container-tdk pb-10 mb-15">
@@ -22,6 +22,17 @@
           color="#6F9CEB"
           class="rounded-card"
         >
+        <div class="btn-next">
+            <v-btn
+            class="ma-2"
+            outlined
+            small
+            fab
+            color="white"
+            >
+                <v-icon>mdi-arrow-right</v-icon>
+            </v-btn>
+        </div>
         <div class="text-center pt-10">
           <v-avatar
           size="230"
@@ -52,7 +63,7 @@
 </template>
 
 <style>
-.prof-tndk{
+.prof-dsn{
   color:#003399;
   margin-top: 20px;
   padding-top: 30px;
@@ -69,6 +80,12 @@
 .rounded-card{
   border-radius: 50px;
 }
+.btn-next{
+    text-align: right;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
 
 </style>
 
@@ -80,9 +97,15 @@ el: '#app',
       dialog: false,
       items:[
         {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
+        nama:'Santi Sundari',
         nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
+        email:'santi@jtk.polban.ac.id',
+        nohp:'081234567891011'
+        },
+        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
+        nama:'Transmissia Semiawan',
+        nip:'19710903199932001',
+        email:'tr@jtk.polban.ac.id',
         nohp:'081234567891011'
         },
         {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
@@ -92,9 +115,9 @@ el: '#app',
         nohp:'081234567891011'
         },
         {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
+        nama:'Bambang Wishnuadi',
         nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
+        email:'bambang@jtk.polban.ac.id',
         nohp:'081234567891011'
         },
         {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
@@ -104,27 +127,15 @@ el: '#app',
         nohp:'081234567891011'
         },
         {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
+        nama:'Yadhi',
         nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
+        email:'yadhi@jtk.polban.ac.id',
         nohp:'081234567891011'
         },
         {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
+        nama:'Yudi Widhiyasana.',
         nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        },
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
-        nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        },
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
-        nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
+        email:'widhiyasana@jtk.polban.ac.id',
         nohp:'081234567891011'
         }
       ]

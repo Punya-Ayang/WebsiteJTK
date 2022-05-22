@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import lightbox from 'vlightbox'
 import LandingPage from '../views/LandingPage.vue'
 import GalleryView from '../views/GalleryView.vue'
 import ArtikelDaftarPrestasiView from '../views/ArtikelDaftarPrestasiView.vue'
@@ -11,8 +12,14 @@ import ProfileProdD3View from '../views/ProfileProdD3View.vue'
 import AgendaView from '../views/AgendaView.vue'
 import DetailAgendaView from '../views/DetailAgendaView.vue'
 import KurikulumProfilLulusanD4View from '../views/KurikulumProfilLulusanD4View.vue'
+import ProfileJurusanView from '../views/ProfileJurusanView.vue'
+import KurikulumView from '../views/KurikulumView.vue'
+import ProfileLulusanD3 from '../views/ProfileLulusanD3.vue'
+import ArtikelDetailKerjaSama from '../views/ArtikelDetailKerjaSama.vue'
+import ProfileDosenView from '../views/ProfileDosenView.vue'
 
 Vue.use(VueRouter)
+Vue.use(lightbox)
 
 const routes = [
   {
@@ -51,7 +58,7 @@ const routes = [
     
   },
   {
-    path: '/ProfileTendik',
+    path: '/profile-tendik',
     name: 'ProfileTendikView',
     component: ProfileTendikView
     
@@ -72,6 +79,34 @@ const routes = [
     path: '/detail-agenda',
     name: 'DetailAgendaView',
     component: DetailAgendaView
+  },{
+    path: '/profile-jurusan',
+    name: 'ProfileJurusanView',
+    component: ProfileJurusanView
+    
+  },
+  {
+    path: '/kurikulum',
+    name: 'KurikulumView',
+    component: KurikulumView
+    
+  },
+  {
+    path: '/profile-lulusan-d3',
+    name: 'ProfileLulusanD3',
+    component: ProfileLulusanD3
+    
+  },
+  {
+    path: '/artikel-detail-kerjasama',
+    name: 'ArtikelDetailKerjaSama',
+    component: ArtikelDetailKerjaSama
+    
+  },
+  {
+    path: '/profile-dosen',
+    name: 'ProfileDosenView',
+    component: ProfileDosenView
     
   },
   {
