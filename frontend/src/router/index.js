@@ -22,6 +22,8 @@ import ProfileLulusanD3 from '../views/ProfileLulusanD3.vue'
 import ArtikelDetailKerjaSama from '../views/ArtikelDetailKerjaSama.vue'
 import ProfileDosenView from '../views/ProfileDosenView.vue'
 import DetailArtikelUmumView from '../views/DetailArtikelUmumView.vue'
+import StrukturMatkulD3 from '../views/StrukturMatkulD3.vue'
+
 
 Vue.use(VueRouter)
 Vue.use(lightbox)
@@ -138,11 +140,19 @@ const routes = [
     
   },
   {
+
     path: '/detail-artikel-umum',
     name: 'DetailArtikelUmumView',
     component: DetailArtikelUmumView
     
   },
+  {
+    path: '/struktur-matkul-d3',
+    name: 'StrukturMatkulD3',
+    component: StrukturMatkulD3
+    
+  },  
+
   {
     path: "/:catchAll(.*)",
     redirect: () => {
