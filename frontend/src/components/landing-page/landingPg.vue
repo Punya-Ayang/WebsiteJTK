@@ -12,7 +12,7 @@
         color: #003399;
         height: 50px;
         font-size: x-large;">
-          <h1 class="headline text-md-center pt-5">Artikel Terkini</h1>
+          <h1 class="headline-lp text-md-center pt-5">Artikel Terkini</h1>
         </div>
 
         <v-row no-gutters>
@@ -73,7 +73,7 @@
           style="
           color: #003399;
           font-size: x-large;">
-              <h1 class="headline">Akademik</h1>
+              <h1 class="headline-lp">Akademik</h1>
               <p class="subheading">
                 Jurusan pertama yang menyelenggarakan pendidikan profesional bidang teknologi informasi, JTK selalu dijadikan tolok ukur dan telah banyak memberikan bantuan teknis dan non-teknis kepada institusi lain maupun kepada masyarakat umum
               </p>
