@@ -1,13 +1,13 @@
 <template>
 <v-app id="Gallery">
     <v-content>
-        <section>
-            <v-container fluid class="grey lighten-5" style="height: 15vh; font-size: xx-large;text-align: center; color: #003399;">
+        <section class="headline-gl">
+            <v-container>
                 <h1>Gallery</h1>
             </v-container>
         </section>
         <v-spacer></v-spacer>
-        <section>
+        <section class="content-gl pt-10 mt-10 pb-10 mb-10">
             <v-row>
                 <v-col
                     v-for="n in 6"
@@ -19,13 +19,14 @@
                 class="mx-auto"
                 max-width="400"
             >
+            <a href="../views/DetailGalleryView.vue">
                 <v-img
                 class="white--text align-end"
-                height="200px"
+                height="250px"
                 src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
                 >
                 </v-img>
-
+            </a>
                 <v-card-subtitle class="pb-0">
                 Created By
                 </v-card-subtitle>
@@ -42,6 +43,21 @@
     </v-content>
 </v-app>
 </template>
+
+<style>
+.headline-gl{
+    height: 100px;
+    background-color: #EEEEEE;
+    padding-top: 20px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: #003399;
+    position: relative;
+    z-index: 1;
+    font-size: x-large;
+}
+</style>
 <script>
 export default{
 el: '#app',

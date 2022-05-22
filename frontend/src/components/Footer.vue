@@ -2,9 +2,9 @@
   <v-app id="footer">
     <div>
       <v-footer color="#003399">
-  
-
-          <v-row >
+          <v-row
+          style="height: 300px"
+          >
           <v-col
             cols="12"
             sm="3"

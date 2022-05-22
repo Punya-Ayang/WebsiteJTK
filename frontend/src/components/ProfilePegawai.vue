@@ -1,48 +1,67 @@
 <template>
-  <v-app id="inspire">
+  <v-app id="profile-pegawai">
  <v-content>
      <v-section>
-         <div flex-column mb-6>
-        <v-card tile class="grey lighten-1" style="width: 25vw;height: 15vh; font-size: xx-large; color: #003399;">
-            <h1>Info Pegawai</h1>
-        </v-card>
+         <div class="headline-infopg">
+             <h1>Info Pegawai</h1>
          </div>
      </v-section>
 
     <v-section>
-             <v-card
-                flat
-                class="py-12"
-            >
-                <v-card-text>
-                <v-row
-                    align="center"
-                    justify="center"
-                >
-                    <v-col cols="12">
-                    
-                    <v-btn
+        <v-container>
+            <v-div class="button">
+                <v-btn
                     dark
                     x-large
                     >
                     <v-icon>mdi-account-box</v-icon>
-                    </v-btn>
-
-                    <v-btn
+                    <h3>Tendik</h3>
+                </v-btn>
+                <v-btn
                     dark
                     x-large
+                    class="button-2"
                     >
                     <v-icon>mdi-account-box-outline</v-icon>
-                    </v-btn>
-                    </v-col>
-                </v-row>
-                </v-card-text>
-            </v-card>
+                    <h3>Dosen</h3>
+                </v-btn>
+                                
+            </v-div>
+        </v-container>
     </v-section>
  </v-content>
   </v-app>
 </template>
 
+<style>
+.headline-infopg{
+    height: 100px;
+    width: 400px;
+    background-color: #EEEEEE;
+    text-align: justify;
+    padding-top: 28px;
+    margin-top: 80px;
+    color: #003399;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.button{
+    padding-top: 4cm;
+    padding-bottom: 4cm;
+    padding-left: 30px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center  ;
+    display: flex;
+}
+.button-2{
+    margin-left: 50px;
+    padding-left: 28px;
+    margin-right: 50px;
+}
+</style>
 <script>
 export default{
   
