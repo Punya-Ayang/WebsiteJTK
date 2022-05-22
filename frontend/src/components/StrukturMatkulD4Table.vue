@@ -1,11 +1,11 @@
 <template>
-    <div id="struktur-matkul-d3">
+    <div id="struktur-matkul-d4">
         <v-content>
             <div class="headline-middle">
                 <h1>Struktur Mata Kuliah</h1>
             </div>
             <v-container>
-                                   <v-col
+                       <v-col
                         class="mx-1 pl-0 pb-0"
                         style="max-width: 10vw; min-width:1vw;"
                         >
@@ -44,10 +44,10 @@ export default {
     data: () => ({
       matkul: [
         {
-          name: 'PKN',
-          deskripsi: 'Mata kuliah umum yang mempelajari tentang kewarganegaraan',
-          sks: 2,
-          skst: 2,
+          name: 'Matematika Terapan',
+          deskripsi: 'Mata kuliah dasar yang mempelajari tentang kalkulus I',
+          sks: 3,
+          skst: 3,
           sksp: 0,
           kode: '16KU34052',
           smt:'Semester 1'

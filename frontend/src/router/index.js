@@ -23,7 +23,7 @@ import ArtikelDetailKerjaSama from '../views/ArtikelDetailKerjaSama.vue'
 import ProfileDosenView from '../views/ProfileDosenView.vue'
 import DetailArtikelUmumView from '../views/DetailArtikelUmumView.vue'
 import StrukturMatkulD3 from '../views/StrukturMatkulD3.vue'
-
+import StrukturMatkulD4View from '../views/StrukturMatkulD4View.vue'
 
 Vue.use(VueRouter)
 Vue.use(lightbox)
@@ -152,7 +152,12 @@ const routes = [
     component: StrukturMatkulD3
     
   },  
-
+  {
+    path: '/struktur-matkul-d4',
+    name: 'StrukturMatkulD4View',
+    component: StrukturMatkulD4View
+    
+  }, 
   {
     path: "/:catchAll(.*)",
     redirect: () => {
