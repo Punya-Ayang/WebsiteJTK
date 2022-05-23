@@ -28,7 +28,7 @@
                 <v-list-item
                   v-for="(item, index) in tentangjtk"
                   :key="index"
-                  link
+                  :to="item.link"
                 >
                   <v-list-item-title>{{ item.title }}</v-list-item-title>
                 </v-list-item>
@@ -54,7 +54,7 @@
                 <v-list-item
                   v-for="(item, index) in akademik"
                   :key="index"
-                  link
+                  :to="item.link"
                 >
                 <v-list-item-title>{{ item.title }}</v-list-item-title>
                 </v-list-item>
@@ -119,9 +119,12 @@ export default{
     return {
       dialog: false,
       tentangjtk: [
-        {title: 'Profile Jurusan'},
+        {title: 'Profile Jurusan',
+         link: '/profile-jurusan'
+        },
         {title: 'Profil Prodi'},
-        {title: 'Profil Pegawai'},
+        {title: 'Profil Pegawai',
+        },
         {title: 'Sarana dan Prasarana'},
         {title: 'Info Kerja Sama'},
         {title: 'Daftar Prestasi'}
