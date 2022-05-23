@@ -27,6 +27,7 @@ import StrukturMatkulD3 from '../views/StrukturMatkulD3.vue'
 import StrukturMatkulD4View from '../views/StrukturMatkulD4View.vue'
 import DetailProfilDosenView from '../views/DetailProfilDosenView'
 import InfoKerjasamaView from '../views/InfoKerjasamaView'
+import TracerStudy from '../views/TracerStudy.vue'
 
 Vue.use(VueRouter)
 Vue.use(lightbox)
@@ -172,6 +173,12 @@ const routes = [
     component: InfoKerjasamaView
     
   },  
+  {
+    path: '/tracer-study',
+    name: 'TracerStudy',
+    component: TracerStudy
+    
+  }, 
   {
     path: "/:catchAll(.*)",
     redirect: () => {
