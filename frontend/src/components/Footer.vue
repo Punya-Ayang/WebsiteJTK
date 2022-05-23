@@ -14,21 +14,54 @@
             <v-list-item-avatar
 
             ></v-list-item-avatar>
-
-            <v-list-item-content>
-              <h4 class="white--text mb-lg-4">
-                Akreditasi Program Studi 
+          <div>
+               <h4 class="white--text mt-lg-2 mb-lg-2">
+                Akreditasi Program Studi
               </h4>
-              <v-img 
-              class="mb-lg-4"  
-              max-height="150"
-              max-width="245"
-              src="../assets/D3.png"></v-img>
-              <v-img   
-              max-height="150"
-              max-width="245"
-              src="../assets/D4.png"></v-img>
-            </v-list-item-content>
+           <div id="app"
+                v-for="(item, i) in prodiD3"
+                :key="i">
+            <v-app id="inspire">
+              <v-card
+                style="border: 3px solid white"
+                width="300"
+                height="100"
+                color="#003399"
+              >
+                <v-list-item three-line>
+                  <v-list-item-content>
+                    <v-list-item-title class="text-h4 text-center" style="color:#ffffff;" v-text=item.alphabet>
+                    </v-list-item-title>
+                    <v-list-item-subtitle class="caption text-center" style="color:#ffffff" v-text=item.ket></v-list-item-subtitle>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-card>
+            </v-app>
+          </div>
+          <div>
+            <br>
+          <div id="app"
+                v-for="(item, i) in prodiD4"
+                :key="i">
+            <v-app id="inspire">
+              <v-card
+                style="border: 3px solid white"
+                width="300"
+                height="100"
+                color="#003399"
+              >
+                <v-list-item three-line>
+                  <v-list-item-content>
+                    <v-list-item-title class="text-h4 text-center" style="color:#ffffff;" v-text=item.alphabet>
+                    </v-list-item-title>
+                    <v-list-item-subtitle class="caption text-center" style="color:#ffffff" v-text=item.ket></v-list-item-subtitle>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-card>
+            </v-app>
+          </div>
+          </div>
+          </div>
           </v-list-item>
      
           </v-col>
@@ -47,11 +80,11 @@
               <h4 class="white--text mb-lg-4">
                 Kontak
               </h4>
-              <h6 class="white--text">email </h6>
-              <h6 class="white--text mb-lg-4">contact@jtk.polban.ac.id</h6>
+              <subtitle-1 class="white--text">Email </subtitle-1>
+              <a href="mailto:contact@jtk.polban.ac.id.com" class="white--text">contact@jtk.polban.ac.id</a>
               
-                 <h6 class="white--text">Hotline JTK </h6>
-                 <h6 class="white--text">022123456 </h6>
+                 <subtitle-1 class="white--text">Hotline JTK </subtitle-1>
+                 <a href="tel:022123456" class="white--text">022123456</a>
             </v-list-item-content>
           </v-list-item>
      
@@ -71,8 +104,8 @@
               <h4 class="white--text mb-lg-4">
                 Link Eksternal
               </h4>
-               <h6 class="white--text" href="http://jtk.polban.ac.id/">polban.ac.id </h6>
-              <h6 class="white--text">akademik@polban.ac.id</h6>
+              <a href="https://polban.ac.id" class="white--text">polban.ac.id</a>
+              <a href="https://akademik@polban.ac.id" class="white--text">akademik@polban.ac.id</a>
               <v-list-item-subtitle></v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
@@ -94,10 +127,20 @@
                 Media Sosial
               </h4>
              
-             <v-row class="ml-lg-1 pt-lg-1"> <v-icon color="white" large  class="mr-lg-1" href="https://www.facebook.com/jtkpolban">mdi-facebook</v-icon>
-              <v-icon color="white" large>mdi-youtube</v-icon></v-row>
+             <v-row class="ml-lg-1 pt-lg-1"> 
+                      <v-btn
+                        v-for="(item, index) in media"
+                        :key="index"
+                        class="mr-4"
+                        color="#FFFFFF"
+                        icon
+                        :href="item.link">
+                        <v-icon color="white" large  class="mr-lg-1"> {{item.icon}}</v-icon></v-btn>
+              </v-row>
+            
+              <!-- <v-icon color="white" large>mdi-youtube</v-icon></v-row>
               <v-row class="ml-lg-1"><v-icon color="white" large class="mr-lg-1">mdi-instagram</v-icon>
-              <v-icon color="white" large>mdi-twitter</v-icon></v-row>
+              <v-icon color="white" large>mdi-twitter</v-icon></v-row> -->
           
               
             </v-list-item-content>
@@ -117,5 +160,21 @@
 </template>
 
 <script>
-
+export default {
+   data () {
+      return {
+        media: [
+            {icon: 'mdi-facebook', link:"https://www.facebook.com/jtkpolban/"},
+            {icon: 'mdi-youtube', link:"https://www.youtube.com/channel/UC7IrpaB00O6NcW5C8gcYjiQ/videos/"},
+            {icon: 'mdi-instagram', link:"https://www.instagram.com/jtkpolban/"}
+         ],
+        prodiD3: [
+          {alphabet:"A", ket:"D-3 Teknik Komputer dan Informatika"}
+        ],
+        prodiD4: [
+          {alphabet:"A", ket:"D-4 Teknik Komputer dan Informatika"}
+        ],
+      }
+   }
+}
 </script>
