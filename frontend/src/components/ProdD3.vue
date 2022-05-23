@@ -1,16 +1,26 @@
 <template>
 <v-app id="inspire">
     <v-content>
-        <section>
-                <!-- <v-container fluid class="grey lighten-5" style="height: 15vh; font-size: xx-large;text-align: center; color: #003399;"> -->
-                <h1 class="text-no-wrap grey lighten-5 pb-lg-4 " style="width: 100rem; grey lighten-9 height: 15vh; font-size: xx-large;text-align: center; color: #003399;">Profil Prodi D3 Teknik Informatika</h1>
-                <div class="mb-lg-4"></div>
-        </section>
+      <section>
+        <v-container
+          fill-height
+          fluid
+          class="grey lighten-5"
+          style="
+            height: 15vh;
+            font-size: xx-large;
+            justify-content: center;
+            color: #003399;
+          "
+        >
+          <h1>Profil Prodi D3 Teknik Informatika</h1>
+        </v-container>
+      </section>
         <v-spacer></v-spacer>
 
         <section>
             <v-container>
-                <v-row align="center" >
+                <v-row align="center" justify="center" class="mt-lg-10 mb-lg-10">
                     <v-img
                     max-height="670px"
                     max-width="1200px"
@@ -21,7 +31,13 @@
         </section>
             <v-spacer></v-spacer>
         <section>
-            <h2 class="mb-lg-2 ml-lg-16 pl-lg-16 pt-lg-8" style="color:#003399" >Visi Program Studi</h2>
+             <v-container>
+          <v-row>
+            <h2 class="mt-lg-2 mb-lg-2" style="color: #003399">
+              Visi Program Studi
+            </h2>
+          </v-row>
+        </v-container>
             <v-container>
                 <v-row align="center" justify="center">
                 <v-text>
@@ -30,7 +46,13 @@
                 </v-text>
                 </v-row>
             </v-container>
-            <h2 class="mb-lg-2 ml-lg-16 pl-lg-16 pt-lg-8" style="color:#003399" >Misi Program Studi</h2>
+             <v-container>
+                <v-row>
+                    <h2 class="mt-lg-2 mb-lg-2" style="color: #003399">
+                    Misi Program Studi
+                    </h2>
+                </v-row>
+            </v-container>
             <v-container>
                 <v-row>
                 <v-text>
@@ -42,7 +64,13 @@
                 </v-text>
                 </v-row>
             </v-container>
-            <h2 class="mb-lg-2 ml-lg-16 pl-lg-16 pt-lg-8" style="color:#003399" >Tujuan Program Studi</h2>
+            <v-container>
+                <v-row>
+                    <h2 class="mt-lg-2 mb-lg-2" style="color: #003399">
+                    Tujuan Program Studi
+                    </h2>
+                </v-row>
+            </v-container>
             <v-container>
                 <v-row align="center" justify="center">
                 <v-text>
@@ -59,7 +87,6 @@
                 </v-text>
                 </v-row>
             </v-container>
-            <h2 class="mb-lg-2 ml-lg-16 pl-lg-16 pt-lg-8" style="color:#003399" >Lainnya</h2>
             <v-container>
                 <a>&bull; Profil Lulusan</a>
                 <br>

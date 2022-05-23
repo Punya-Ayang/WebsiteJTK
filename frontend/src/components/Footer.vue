@@ -71,7 +71,7 @@
               <h4 class="white--text mb-lg-4">
                 Link Eksternal
               </h4>
-               <h6 class="white--text">polban.ac.id </h6>
+               <h6 class="white--text" href="http://jtk.polban.ac.id/">polban.ac.id </h6>
               <h6 class="white--text">akademik@polban.ac.id</h6>
               <v-list-item-subtitle></v-list-item-subtitle>
             </v-list-item-content>
@@ -94,7 +94,7 @@
                 Media Sosial
               </h4>
              
-             <v-row class="ml-lg-1 pt-lg-1"> <v-icon color="white" large  class="mr-lg-1">mdi-facebook</v-icon>
+             <v-row class="ml-lg-1 pt-lg-1"> <v-icon color="white" large  class="mr-lg-1" href="https://www.facebook.com/jtkpolban">mdi-facebook</v-icon>
               <v-icon color="white" large>mdi-youtube</v-icon></v-row>
               <v-row class="ml-lg-1"><v-icon color="white" large class="mr-lg-1">mdi-instagram</v-icon>
               <v-icon color="white" large>mdi-twitter</v-icon></v-row>

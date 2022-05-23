@@ -119,15 +119,12 @@ export default{
     return {
       dialog: false,
       tentangjtk: [
-        {title: 'Profile Jurusan',
-         link: '/profile-jurusan'
-        },
-        {title: 'Profil Prodi'},
-        {title: 'Profil Pegawai',
-        },
-        {title: 'Sarana dan Prasarana'},
-        {title: 'Info Kerja Sama'},
-        {title: 'Daftar Prestasi'}
+        {title: 'Profile Jurusan', link:"/profile-jurusan"},
+        {title: 'Profil Prodi', link:"/profile-prodi-d3"},
+        {title: 'Profil Pegawai', link:"/profile-pegawai"},
+        {title: 'Sarana dan Prasarana', link:"/sarana-prasarana"},
+        {title: 'Info Kerja Sama', link:"/-"},
+        {title: 'Daftar Prestasi', link:"/daftar-prestasi"}
       ],
       akademik  : [
         {title: 'Kurikulum'},
