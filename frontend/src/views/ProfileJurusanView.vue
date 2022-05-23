@@ -2,7 +2,7 @@
     <div id="profile-jurusan">
         <Navbar />
         <v-content>
-            <div class="headline">
+            <div class="headline-middle">
                 <h1>Profile, Visi, dan Misi</h1>
             </div>
             <v-container>

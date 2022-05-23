@@ -54,7 +54,7 @@
                 <v-list-item
                   v-for="(item, index) in akademik"
                   :key="index"
-                  link
+                  :to="item.link"
                 >
                 <v-list-item-title>{{ item.title }}</v-list-item-title>
                 </v-list-item>
