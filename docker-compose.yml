@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  frontend:
+    container_name: frontend-web-jtk
+    image: frontend-web-jtk
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+    - ./frontend:/app
+    expose:
+      - "80"
+    ports:
+      - "8080:8080"
+      
+  cms-web-jtk:
+    container_name: cms-web-jtk
+    image: cms-web-jtk
+    env_file: ./cms-web-jtk/.env
+    build:
+      context: ./cms-web-jtk
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/srv/app
+    ports:
+      - 1337:1337
+    command: ["yarn", "start"]
