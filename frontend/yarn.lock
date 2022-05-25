@@ -19,6 +19,32 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
+"@anzerr/clone.util@^1.0.14":
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/@anzerr/clone.util/-/clone.util-1.0.14.tgz#87d9d12e73ba9dda20040c6fafeb1a6b6c0081fc"
+  integrity sha512-5gu4lGNU2sPt81ua8DIIJKvT8yu9wrzVfhv+WkIiwwVNv00gtcvONGTIre7DVpkAbE/6ePbRdTO+Xks6JF5OKw==
+  dependencies:
+    "@anzerr/type.util" "^1.0.17"
+
+"@anzerr/http.server@^1.0.22":
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/@anzerr/http.server/-/http.server-1.0.22.tgz#eab58f12bbadb79c15a824ee833c8a54a2d9ad0f"
+  integrity sha512-oYScoktFkn1NQLaz0Zf7PXz88zWcQ+mOIqiSSb5n9S6LPDepl9j1JY1LwLiNzwEE1/pMYSJ8Eoehb8Uur0RS8g==
+  dependencies:
+    "@anzerr/clone.util" "^1.0.14"
+    "@anzerr/mime.util" "^1.0.12"
+    "@anzerr/type.util" "^1.0.17"
+
+"@anzerr/mime.util@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@anzerr/mime.util/-/mime.util-1.0.12.tgz#bb211b8fc885a27b41725a82a55d59ffe1b040cb"
+  integrity sha512-6p77FJYXoauZmGFMge5LyJXaqKplqLKfRGY7HnOI8meYnAj5o+IAJu7ZmxJHBlAnO3hnF6hwEnVU362t5UVCAw==
+
+"@anzerr/type.util@^1.0.17":
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/@anzerr/type.util/-/type.util-1.0.17.tgz#5fede7315c11dec3e15893f722df74acb1145eb9"
+  integrity sha512-CE8JubdRPIXDOM1HPyGVq0cr5dI6no/N0TbRl3pl9jDFYoCXoZY4ewyFAfT4emPGoSFl2lBNkhJADHgLElTxkw==
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.16.7":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.16.7.tgz#44416b6bd7624b998f5b1af5d470856c40138789"

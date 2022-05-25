@@ -1,16 +1,20 @@
 # develop stage
-FROM node:lts-alpine as build-stage
+FROM node:lts-alpine
+
+RUN npm install -g http-server
 
 WORKDIR /app
 
-COPY package.json .
+COPY package.json ./
 
-COPY yarn.lock .
+COPY yarn.lock ./
 
 RUN yarn install 
 
 COPY . .
 
+RUN yarn build
+
 EXPOSE 8080
 
-CMD [ "yarn","serve" ]
+CMD [ "http-server", "dist" ]
