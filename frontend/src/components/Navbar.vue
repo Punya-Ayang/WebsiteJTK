@@ -3,7 +3,9 @@
       <v-toolbar dark color="#003399" style="max-height:35vh;">
       <v-toolbar-title class="white--text">
         <div class="image" style="max-width: 8vw; min-width:1vw;height: 3.5vw;">
-          <img class="logo" src="../assets/logoPolban.png" width="50x">
+        <router-link to="/">
+          <img class="logo" src="../assets/logoPolban.png" width="50x" href="/">
+        </router-link>
         </div>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -62,16 +64,19 @@
           </v-menu>
           <v-btn
               text
+              href="/daftar-artikel"
               >
               Article News
           </v-btn>
           <v-btn
               text
+              href="/gallery"
               >
               Gallery
           </v-btn>
           <v-btn
               text
+              href="/tracer-study"
               >
               Tracer Study
           </v-btn>  
@@ -120,17 +125,16 @@ export default{
       dialog: false,
       tentangjtk: [
         {title: 'Profile Jurusan', link:"/profile-jurusan"},
-        {title: 'Profil Prodi', link:"/profile-prodi-d3"},
+        {title: 'Profil Prodi D-4', link:"/profile-prodi-d4"},
+        {title: 'Profil Prodi D-3', link:"/profile-prodi-d3"},
         {title: 'Profil Pegawai', link:"/profile-pegawai"},
         {title: 'Sarana dan Prasarana', link:"/sarana-prasarana"},
-        {title: 'Info Kerja Sama', link:"/-"},
+        {title: 'Info Kerja Sama', link:"/info-kerja-sama"},
         {title: 'Daftar Prestasi', link:"/daftar-prestasi"}
       ],
       akademik  : [
-        {title: 'Kurikulum'},
-        {title: 'Profil Lulusan'},
-        {title: 'Mata Kuliah'},
-        {title: 'Agenda'}
+        {title: 'Kurikulum', link:"/kurikulum"},
+        {title: 'Agenda', link:"/agenda"}
       ],
       language :[
         'IDN','ENG'
