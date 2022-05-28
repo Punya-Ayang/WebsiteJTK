@@ -24,7 +24,7 @@
             <v-img
               max-height="670px"
               max-width="1200px"
-              src="../assets/Landing.png"
+              :src="item.banner.url"
             ></v-img>
           </v-row>
         </v-container>
@@ -42,25 +42,8 @@
   </v-app>
 </template>
 <script>
-import axios from "axios";
-
 export default {
-  created() {
-    const id = this.$route.query.id;
-    console.log(id);
-    axios
-      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/artikels/" + id)
-      .then((res) => {
-        this.item = res.data;
-        console.log(this.item);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  },
   el: "#app",
-  data: () => ({
-    item: []
-  }),
+  props: ["item"],
 };
 </script>

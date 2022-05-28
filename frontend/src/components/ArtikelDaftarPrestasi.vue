@@ -61,16 +61,32 @@
   </v-app>
 </template>
 <script>
+import axios from "axios";
+
 export default {
   el: "#app",
+  created() {
+    const id = this.$route.query.id;
+    console.log(id);
+    axios
+      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/prestasis" + id)
+      .then((res) => {
+        this.article = res.data;
+        console.log(this.article);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  },
   data() {
     return {
       dialog: false,
-      article: {
-        title: "JTK Memperoleh 3 Medali pada PIMNAS",
-        artist: "09/05/2022 / Kejuaraan",
-        Text: "Mahasiswa JTK Polban kembali unjuk gigi dengan raihan Juara 1 di ajang Hackaton BuildOn Indonesia 2020 (13/09/2020) melalui karya berjudul “Obsterik: Aplikasi untuk Bidan”. Mereka adalah tim “Semester 2 Setengah” yang beranggotakan : Reynaldy Rizki Saputra (191524031) Muhammad Fauzan Lubis (191524026) Marissa Nur Amalia (191524019) Kompetisi BuildOn Indonesia merupakan rangkaian dari BuildOn ASEAN 2020 yang diselenggarakan di Malaysia, Singapura, Indonesia, Filipina, dan Thailand. Peserta Hackaton BuildOn ASEAN 2020 ditantang untuk belajar dan menyelesaikan permasalahan menggunakan teknologi Cloud Computing AWS. Akibat pandemi COVID-19, seluruh tahapan kompetisi dilakukan secara daring. Kompetisi dimulai pengiriman proposal, kemudian 50 tim terbaik akan melaju ke tahap selanjutnya yaitu mengirimkan video presentasi dan prototyping. Mereka berhasil menjadi juara 1 sehingga berhasil menjadi 1 dari 3 tim yang akan mewakili Indonesia di tingkat ASEAN Fauzan dan kawan-kawan berharap rekan-rekan yang lain berani mencoba ikut serta dalam berbagai kompetisi agar waktu luang yang tersedia dapat dimanfaatkan secara lebih baik. Selamat kepada tim semeseter 2 setengah ! Semoga dapat menjadi inspirasi bagi yang lain ! Kepada para bidan Indonesia, selamat datang di masa depan! semester 2 setengah mempersembahkan Obstetrisk: Aplikasi untuk bidan. App ini memiliki fitur akun untuk bidan, pendaftaran nama pasien oleh bidan, penambahan rekam jejak medis, serta pencatat pertemuan yang dilakukan antara bidan dengan pasien. "
-      },
+      article: {},
+      // article: {
+      //   title: "JTK Memperoleh 3 Medali pada PIMNAS",
+      //   artist: "09/05/2022 / Kejuaraan",
+      //   Text: "Mahasiswa JTK Polban kembali unjuk gigi dengan raihan Juara 1 di ajang Hackaton BuildOn Indonesia 2020 (13/09/2020) melalui karya berjudul “Obsterik: Aplikasi untuk Bidan”. Mereka adalah tim “Semester 2 Setengah” yang beranggotakan : Reynaldy Rizki Saputra (191524031) Muhammad Fauzan Lubis (191524026) Marissa Nur Amalia (191524019) Kompetisi BuildOn Indonesia merupakan rangkaian dari BuildOn ASEAN 2020 yang diselenggarakan di Malaysia, Singapura, Indonesia, Filipina, dan Thailand. Peserta Hackaton BuildOn ASEAN 2020 ditantang untuk belajar dan menyelesaikan permasalahan menggunakan teknologi Cloud Computing AWS. Akibat pandemi COVID-19, seluruh tahapan kompetisi dilakukan secara daring. Kompetisi dimulai pengiriman proposal, kemudian 50 tim terbaik akan melaju ke tahap selanjutnya yaitu mengirimkan video presentasi dan prototyping. Mereka berhasil menjadi juara 1 sehingga berhasil menjadi 1 dari 3 tim yang akan mewakili Indonesia di tingkat ASEAN Fauzan dan kawan-kawan berharap rekan-rekan yang lain berani mencoba ikut serta dalam berbagai kompetisi agar waktu luang yang tersedia dapat dimanfaatkan secara lebih baik. Selamat kepada tim semeseter 2 setengah ! Semoga dapat menjadi inspirasi bagi yang lain ! Kepada para bidan Indonesia, selamat datang di masa depan! semester 2 setengah mempersembahkan Obstetrisk: Aplikasi untuk bidan. App ini memiliki fitur akun untuk bidan, pendaftaran nama pasien oleh bidan, penambahan rekam jejak medis, serta pencatat pertemuan yang dilakukan antara bidan dengan pasien. "
+      // },
     };
   },
 };
