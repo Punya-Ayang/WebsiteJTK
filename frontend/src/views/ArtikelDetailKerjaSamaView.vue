@@ -1,35 +1,44 @@
 <template>
-  <div id="landing-page">
+  <div id="Artikel-Detail-KerjaSama">
     <Navbar />
-    <DetailGallery v-bind="props" />
+    <DetailArtikelKerjasama v-bind="props"/>
     <Footer />
   </div>
 </template>
+
+<style>
+.content-ar {
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
+  font-size: large;
+}
+</style>
 
 <script>
 import Vue from "vue";
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
-import DetailGallery from "../components/DetailGallery.vue";
+import DetailArtikelKerjasama from "../components/DetailArtikel.vue";
 import axios from "axios";
 
 export default Vue.extend({
   components: {
     Navbar,
     Footer,
-    DetailGallery,
+    DetailArtikelKerjasama,
   },
   created() {
     const id = this.$route.query.id;
     console.log(id);
     axios
-      .get("http://localhost:1337/galleries/" + id)
+      .get("http://localhost:1337/kerja-samas/" + id)
       .then((res) => {
         this.props.item = res.data;
-        this.props.item.media.forEach((Image) => {
-            this.props.images.push({src: Image.formats.large.url});
-        });
-        console.log(this.props.images);
+        this.props.item.date = this.props.item.date + " / Kerja Sama";
+        console.log(this.props.item);
       })
       .catch((err) => {
         console.error(err);
@@ -38,9 +47,8 @@ export default Vue.extend({
   data: () => ({
     props: {
       item: [],
-      images: [],
     },
   }),
-  name: "DetailGalleryView",
+  name: "ArtikelDetailKerjaSama",
 });
 </script>

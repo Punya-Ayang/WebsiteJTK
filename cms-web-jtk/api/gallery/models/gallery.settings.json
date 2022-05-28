@@ -29,6 +29,13 @@
     },
     "tanggal": {
       "type": "date"
+    },
+    "by": {
+      "type": "enumeration",
+      "enum": [
+        "HIMAKOM",
+        "HumasJTK"
+      ]
     }
   }
 }

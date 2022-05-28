@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "kerja_samas",
   "info": {
-    "name": "Kerja Sama"
+    "name": "Kerja Sama",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,14 +12,26 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "judl_kerja_sama": {
+    "title": {
       "type": "string"
     },
-    "tanggal_kerjasama": {
+    "date": {
       "type": "date"
     },
-    "deskripsi_kerjasama": {
+    "body": {
       "type": "richtext"
+    },
+    "banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

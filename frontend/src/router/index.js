@@ -20,7 +20,7 @@ import KurikulumProfilLulusanD4View from '../views/KurikulumProfilLulusanD4View.
 import ProfileJurusanView from '../views/ProfileJurusanView.vue'
 import KurikulumView from '../views/KurikulumView.vue'
 import ProfileLulusanD3 from '../views/ProfileLulusanD3.vue'
-import ArtikelDetailKerjaSama from '../views/ArtikelDetailKerjaSama.vue'
+import ArtikelDetailKerjaSamaView from '../views/ArtikelDetailKerjaSamaView.vue'
 import ProfileDosenView from '../views/ProfileDosenView.vue'
 import DetailArtikelUmumView from '../views/DetailArtikelUmumView.vue'
 import StrukturMatkulD3 from '../views/StrukturMatkulD3.vue'
@@ -130,7 +130,7 @@ const routes = [
   {
     path: '/artikel-detail-kerjasama',
     name: 'ArtikelDetailKerjaSama',
-    component: ArtikelDetailKerjaSama
+    component: ArtikelDetailKerjaSamaView
   },
   {
     path: '/profile-dosen',
