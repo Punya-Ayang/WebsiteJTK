@@ -17,7 +17,7 @@
               <v-container color="#F0F0FF" class="d-flex flex-no-wrap">
                 <div>
                   <v-img
-                    :src="items.src"
+                    :src="items.profil.url"
                     height="210px"
                     max-width="210px"
                   ></v-img>
@@ -45,7 +45,7 @@
                       <v-container><h4 v-text="items.nip"></h4></v-container>
                       <v-container><h4 v-text="items.email"></h4></v-container>
                       <v-container><h4 v-text="items.no_hp"></h4></v-container>
-                      <v-container><h4 v-text="items.kbk"></h4></v-container>
+                      <v-container><h4 v-text="items.bidang_keilmuan.bidang"></h4></v-container>
                     </v-container>
                   </v-container>
                   <v-container>
@@ -79,9 +79,9 @@
                               </tr>
                             </thead>
                             <tbody>
-                              <tr v-for="item in items.mk" :key="item.matkul">
-                                <td>{{ item.matkul }}</td>
-                                <td>{{ item.sks }}</td>
+                              <tr v-for="item in items.mata_kuliah_diampu" :key="item.nama_mata_kuliah">
+                                <td>{{ item.nama_mata_kuliah }}</td>
+                                <td>{{ item.sks_t + item.sks_p }}</td>
                               </tr>
                             </tbody>
                           </template>
@@ -92,7 +92,7 @@
                   <v-container>
                     <div>
                       <v-container class="pt-0 pl-lg-5">
-                        <h2>Pengalaman</h2>
+                        <h2>Penelitian Dosen</h2>
                       </v-container>
                     </div>
                     <div class="pt-0 pl-lg-5">
@@ -101,14 +101,16 @@
                           <template v-slot:default>
                             <thead>
                               <tr>
-                                <th class="text-left">Pengalaman</th>
-                                <th class="text-left">Jenis</th>
+                                <th class="text-left">Judul</th>
+                                <th class="text-left">Penyandang Dana</th>
+                                <th class="text-left">Tahun</th>
                               </tr>
                             </thead>
                             <tbody>
-                              <tr v-for="item in items.pglmn" :key="item.pangalaman">
-                                <td>{{ item.pengalaman }}</td>
-                                <td>{{ item.jenis }}</td>
+                              <tr v-for="item in items.penelitian_dosens" :key="item.judul_penelitian">
+                                <td>{{ item.judul_penelitian }}</td>
+                                <td>{{ item.penyandang_dana }}</td>
+                                <td>{{ item.tahun }}</td>
                               </tr>
                             </tbody>
                           </template>
@@ -133,9 +135,9 @@
                               </tr>
                             </thead>
                             <tbody>
-                              <tr v-for="item in items.pub" :key="item.publikasi">
-                                <td>{{ item.publikasi }}</td>
-                                <td>{{ item.link }}</td>
+                              <tr v-for="item in items.publikasi_dosens" :key="item.judul_publikasi">
+                                <td>{{ item.judul_publikasi }}</td>
+                                <td>{{ item.link_publikasi }}</td>
                               </tr>
                             </tbody>
                           </template>

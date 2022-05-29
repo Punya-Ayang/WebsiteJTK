@@ -29,6 +29,7 @@
             small
             fab
             color="white"
+            :href="path + item.id"
             >
                 <v-icon>mdi-arrow-right</v-icon>
             </v-btn>
@@ -39,7 +40,7 @@
           text-center
           >
           <v-img
-            src="../assets/girl.png"
+            :src="item.profil.url"
           ></v-img>
           </v-avatar>
         </div>
@@ -51,7 +52,7 @@
           <br>
           <subtitle-1 v-text="item.email"></subtitle-1>
           <br>
-          <subtitle-1 v-text="item.nohp"></subtitle-1>
+          <subtitle-1 v-text="item.no_hp"></subtitle-1>
         </div>
         </div>
         </v-card>
@@ -90,55 +91,26 @@
 </style>
 
 <script>
+import axios from "axios";
+
 export default{
 el: '#app',
+  created() {
+    axios
+      .get("http://localhost:1337/dosens")
+      .then((res) => {
+        this.items = res.data;
+        console.log(this.items);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  },
   data () {
     return {
       dialog: false,
-      items:[
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Santi Sundari',
-        nip:'19710903199932001',
-        email:'santi@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        },
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Transmissia Semiawan',
-        nip:'19710903199932001',
-        email:'tr@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        },
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
-        nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        },
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Bambang Wishnuadi',
-        nip:'19710903199932001',
-        email:'bambang@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        },
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
-        nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        },
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Yadhi',
-        nip:'19710903199932001',
-        email:'yadhi@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        },
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Yudi Widhiyasana.',
-        nip:'19710903199932001',
-        email:'widhiyasana@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        }
-      ]
+      path: "http://localhost:8080/profile-dosen/detail?id=",
+      items:[]
     }
   }
 };

@@ -28,7 +28,7 @@
           text-center
           >
           <v-img
-            src="../assets/girl.png"
+            :src="item.profil.url"
           ></v-img>
           </v-avatar>
         </div>
@@ -40,7 +40,7 @@
           <br>
           <subtitle-1 v-text="item.email"></subtitle-1>
           <br>
-          <subtitle-1 v-text="item.nohp"></subtitle-1>
+          <subtitle-1 v-text="item.no_hp"></subtitle-1>
         </div>
         </div>
         </v-card>
@@ -75,59 +75,10 @@
 <script>
 export default{
 el: '#app',
+props: ["items"],
   data () {
     return {
       dialog: false,
-      items:[
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
-        nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        },
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
-        nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        },
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
-        nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        },
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
-        nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        },
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
-        nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        },
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
-        nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        },
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
-        nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        },
-        {src:'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-        nama:'Marasonang Siregar, A.Md.',
-        nip:'19710903199932001',
-        email:'marasonang@jtk.polban.ac.id',
-        nohp:'081234567891011'
-        }
-      ]
     }
   }
 };
