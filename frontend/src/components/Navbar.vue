@@ -64,19 +64,19 @@
           </v-menu>
           <v-btn
               text
-              href="/daftar-artikel"
+              to="/daftar-artikel"
               >
               Article News
           </v-btn>
           <v-btn
               text
-              href="/gallery"
+              to="/gallery"
               >
               Gallery
           </v-btn>
           <v-btn
               text
-              href="/tracer-study"
+              to="/tracer-study"
               >
               Tracer Study
           </v-btn>  

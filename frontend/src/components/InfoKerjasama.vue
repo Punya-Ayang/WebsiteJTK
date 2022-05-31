@@ -83,7 +83,7 @@
           </v-col>
           <v-col class="mb-lg-5 px-100 pt-10">
             <div class="text-center">
-              <v-btn href="http://localhost:8080/daftar-kerja-sama" small color="#E6E6E6" dark> Lihat Selengkapnya </v-btn>
+              <v-btn href="/daftar-kerja-sama" small color="#E6E6E6" dark style="color: black"> Lihat Selengkapnya </v-btn>
             </div>
           </v-col>
           <v-col class="mb-lg-5 px-100 pt-10">

@@ -9,9 +9,9 @@
                 <v-section>
                 <h1>D3 Teknik Informatika</h1>
                 <div class="list">
-                <a href="..">Profile Lulusan</a>
+                <a href="/profile-lulusan-d3">Profile Lulusan</a>
                 <br>
-                <a href="..">Mata Kuliah</a>
+                <a href="/struktur-matkul-d3">Mata Kuliah</a>
                 </div>
 
                 </v-section>
@@ -19,9 +19,9 @@
                 <v-section>
                     <h1>D4 Teknik Informatika</h1>
                 <div class="list">
-                <a href="..">Profile Lulusan</a>
+                <a href="/kurikulum-profil-lulusan-d4">Profile Lulusan</a>
                 <br>
-                <a href="..">Mata Kuliah</a>
+                <a href="/struktur-matkul-d4">Mata Kuliah</a>
                 <br>
                 <br>
                 </div>

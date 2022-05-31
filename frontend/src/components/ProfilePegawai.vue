@@ -13,6 +13,7 @@
                 <v-btn
                     dark
                     x-large
+                    to="/profile-tendik"
                     >
                     <v-icon>mdi-account-box</v-icon>
                     <h3>Tendik</h3>
@@ -21,6 +22,7 @@
                     dark
                     x-large
                     class="button-2"
+                    to="/profile-dosen"
                     >
                     <v-icon>mdi-account-box-outline</v-icon>
                     <h3>Dosen</h3>

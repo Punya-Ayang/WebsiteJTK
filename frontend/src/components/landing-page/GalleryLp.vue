@@ -36,6 +36,7 @@
               color="#E6E6E6"
               dark
               style="color: black"
+              to="/gallery"
             >
               Lihat Selengkapnya
             </v-btn>
