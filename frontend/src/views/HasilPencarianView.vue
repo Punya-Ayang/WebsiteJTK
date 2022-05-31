@@ -1,8 +1,10 @@
 <template>
   <div id="hasil-pencarian">
     <Navbar />
-    <div v-if="props.items.length === 0">
-      <DaftarPencarian v-bind:title="props.title" v-bind:subtitle="props.subtitle" />
+    <div v-if="props.items.length === 1 && props.items[0].title === ''">
+      <DaftarPencarian
+        v-bind="props"
+      />
     </div>
     <div v-else>
       <DaftarPencarian v-bind="props" />
@@ -16,6 +18,7 @@ import Vue from "vue";
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 import DaftarPencarian from "../components/Daftar.vue";
+import axios from "axios";
 
 export default Vue.extend({
   components: {
@@ -23,41 +26,39 @@ export default Vue.extend({
     Footer,
     DaftarPencarian,
   },
+  async beforeCreate() {
+    this.search = this.$route.query.search;
+    console.log(this.search);
+    await axios
+      .get("http://localhost:1337/artikels?title_contains=" + this.search)
+      .then((res) => {
+        this.props.items = res.data;
+        this.props.items.forEach(artikel => {
+          artikel.body = artikel.body.slice(0,300) + "...";
+        });
+        console.log(this.props.items);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  },
   data() {
     return {
       props: {
         title: "Hasil Pencarian",
-        subtitle: "Menampilkan Hasil Pencarian dari “PIMNAS”",
+        subtitle: "Menampilkan Hasil Pencarian dari " + this.search,
         page: 1,
         dialog: false,
-        items: 
-        //[]
-        [
-          {
-            src: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
-            title: "JTK Memperoleh 3 Medali pada PIMNAS",
-            artist: "09/05/2022 / Kejuaraan",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra posuere volutpat. Etiam nec tortor quis purus fermentum dapibus ac vitae ex. Duis sodales sit amet ex non imperdiet. Vivamus leo ex, pretium et malesuada sed, auctor a libero. Nullam scelerisque feugiat convallis. In eget ullamcorper tortor. Cras nec vestibulum urna. Nullam quis magna quis tellus ultricies interdum. Suspendisse vel bibendum lectus, vitae eleifend enim. ",
+        items: [{
+          banner: {
+            url: 'https://res.cloudinary.com/marssn/image/upload/v1653719265/DIG_Ibanner_732784414a.jpg' 
           },
-          {
-            src: "https://cdn.vuetifyjs.com/images/cards/halcyon.png",
-            title: "JTK Memperoleh 3 Medali pada PIMNAS",
-            artist: "09/05/2022 / Kejuaraan",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra posuere volutpat. Etiam nec tortor quis purus fermentum dapibus ac vitae ex. Duis sodales sit amet ex non imperdiet. Vivamus leo ex, pretium et malesuada sed, auctor a libero. Nullam scelerisque feugiat convallis. In eget ullamcorper tortor. Cras nec vestibulum urna. Nullam quis magna quis tellus ultricies interdum. Suspendisse vel bibendum lectus, vitae eleifend enim. ",
-          },
-          {
-            src: "https://cdn.vuetifyjs.com/images/cards/halcyon.png",
-            title: "JTK Memperoleh 3 Medali pada PIMNAS",
-            artist: "09/05/2022 / Kejuaraan",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra posuere volutpat. Etiam nec tortor quis purus fermentum dapibus ac vitae ex. Duis sodales sit amet ex non imperdiet. Vivamus leo ex, pretium et malesuada sed, auctor a libero. Nullam scelerisque feugiat convallis. In eget ullamcorper tortor. Cras nec vestibulum urna. Nullam quis magna quis tellus ultricies interdum. Suspendisse vel bibendum lectus, vitae eleifend enim. ",
-          },
-          {
-            src: "https://cdn.vuetifyjs.com/images/cards/halcyon.png",
-            title: "JTK Memperoleh 3 Medali pada PIMNAS",
-            artist: "09/05/2022 / Kejuaraan",
-            Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra posuere volutpat. Etiam nec tortor quis purus fermentum dapibus ac vitae ex. Duis sodales sit amet ex non imperdiet. Vivamus leo ex, pretium et malesuada sed, auctor a libero. Nullam scelerisque feugiat convallis. In eget ullamcorper tortor. Cras nec vestibulum urna. Nullam quis magna quis tellus ultricies interdum. Suspendisse vel bibendum lectus, vitae eleifend enim. ",
-          },
-        ],
+          title: '',
+          body: '',
+          date: '',
+          id: ''
+        }],
+        path: "http://localhost:8080/detail-artikel-umum?id=",
       },
     };
   },

@@ -40,16 +40,16 @@
                 tile
                 color="#F0F0FF"
                 class="mb-lg-10 d-flex flex-no-wrap justify-space-between"
+                v-if="item.title !== ''"
               >
                 <div class="ma-5">
                   <div>
                     <v-card-title
                       class="text-h5"
-                      v-text="item.title"
                       style="font-style: #00000; color: #003399"
-                    ></v-card-title>
-                    <v-card-subtitle v-text="item.date"></v-card-subtitle>
-                    <v-card-text v-text="item.body"> </v-card-text>
+                    >{{ item.title }}</v-card-title>
+                    <v-card-subtitle>{{ item.date }}</v-card-subtitle>
+                    <v-card-text>{{ item.body }}</v-card-text>
                   </div>
                   <v-card-actions>
                     <v-btn
@@ -81,7 +81,7 @@
         </v-container>
       </section>
       <div
-        v-if="items === NULL"
+        v-if="items.length === 1 && items[0].title === ''"
         class="text-center pt-lg-10 pb-lg-10 mt-lg-10 mb-lg-10"
       >
         <h3 class="font-weight-bold">Not Found</h3>
