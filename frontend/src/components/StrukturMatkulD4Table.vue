@@ -5,6 +5,7 @@
         <h1>Struktur Mata Kuliah</h1>
       </div>
       <v-container>
+         <h3>Pilih Semester</h3>
         <v-col class="mx-1 pl-0 pb-0" style="max-width: 10vw; min-width: 1vw">
           <v-select
             :items="semester"
@@ -18,7 +19,7 @@
         </v-col>
 
         <div class="subheader-mtk pb-lg-5 pt-0">
-          <h1>D4 Teknik Informatika</h1>
+          <h1>D-4 Teknik Informatika</h1>
         </div>
         <div>
           <v-data-table
