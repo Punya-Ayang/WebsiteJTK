@@ -54,6 +54,7 @@
               color="#E6E6E6"
               dark
               style="color: black"
+              to="/agenda"
             >
               Lihat Selengkapnya
             </v-btn>
