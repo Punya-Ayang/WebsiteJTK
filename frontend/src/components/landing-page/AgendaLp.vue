@@ -1,52 +1,37 @@
 <template>
-<v-app>
+  <v-app>
     <v-content>
-         <section
-       style="
-       background-color: #EEEEEE;
-       height: 400px;
-       "
-       >
-          <div 
+      <section style="background-color: #eeeeee; height: 400px">
+        <div
           class="text-md-center pt-10 pb-10"
-          style="
-          color: #003399;
-          font-size: x-large;">
+          style="color: #003399; font-size: x-large"
+        >
           <h1>Agenda</h1>
-          </div>
+        </div>
 
         <v-row no-gutters>
-          <v-col
-            v-for="(item, i) in items"
-            :key="i"
-            cols="12"
-            sm="4"
-          >
-          <v-card
-          class="mx-auto"
-          max-width="344"
-          max-height="250px"
-          outlined
-        >
-          <v-list-item three-line>
-            <v-list-item-avatar
-              tile
-              size="80"
-              :src="item.image.url"
-            >
-            <v-img :src="item.image.url"></v-img>
-            </v-list-item-avatar>
+          <v-col v-for="(item, i) in items" :key="i" cols="12" sm="4">
+            <v-card class="mx-auto" max-width="344" max-height="250px" outlined :href="path + item.id">
+              <v-list-item three-line>
+                <v-list-item-avatar tile size="80" :src="item.image.url">
+                  <v-img :src="item.image.url"></v-img>
+                </v-list-item-avatar>
 
-            <v-list-item-content>
-              <v-list-item-title class="text-h5" v-text="item.judul_kegiatan"> 
-              </v-list-item-title>
-              <v-list-item-subtitle v-text="item.tanggal_kegiatan"></v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-        </v-card>
+                <v-list-item-content>
+                  <v-list-item-title
+                    class="text-h5"
+                    v-text="item.judul_kegiatan"
+                  >
+                  </v-list-item-title>
+                  <v-list-item-subtitle
+                    v-text="item.tanggal_kegiatan"
+                  ></v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-card>
           </v-col>
         </v-row>
-        
+
         <v-col class="px-100 pt-10 pb-10">
           <div class="text-center">
             <v-btn
@@ -62,17 +47,18 @@
         </v-col>
       </section>
     </v-content>
-</v-app>
+  </v-app>
 </template>
 
 <script>
-import axios from "axios"
+import axios from "axios";
 
-export default{
- 
+export default {
   created() {
     axios
-      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/acaras?_start=0&_limit=3&_sort=tanggal_kegiatan:DESC")
+      .get(
+        "https://cms-web-jtk-kartikamilenda.cloud.okteto.net/acaras?_start=0&_limit=3&_sort=tanggal_kegiatan:DESC"
+      )
       .then((res) => {
         this.items = res.data;
         console.log(this.items);
@@ -81,11 +67,12 @@ export default{
         console.error(err);
       });
   },
-  data () {
+  data() {
     return {
       dialog: false,
-      items:[]
-    }
-  }
+      items: [],
+      path: "/detail-agenda?id=",
+    };
+  },
 };
 </script>

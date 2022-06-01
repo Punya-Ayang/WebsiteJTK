@@ -8,7 +8,7 @@
 
         <v-row no-gutters>
           <v-col v-for="(item, i) in items" :key="i" cols="12" sm="4">
-            <v-card :loading="loading" class="mx-auto my-12" max-width="374">
+            <v-card :loading="loading" class="mx-auto my-12" max-width="374" :href="path + item.id">
               <v-img height="250" :src="item.banner.url"></v-img>
               <v-card-title v-text="item.title"></v-card-title>
               <v-card-text v-text="item.body"> </v-card-text>
@@ -44,6 +44,7 @@ export default {
     return {
       dialog: false,
       items: [],
+      path: "/detail-artikel-umum?id="
     };
   },
   created() {
