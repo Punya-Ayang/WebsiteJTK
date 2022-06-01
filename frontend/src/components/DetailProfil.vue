@@ -142,7 +142,7 @@
 </template>
 <script>
 export default {
-  el: "#app",
+ 
   props: ["title", "page", "dialog", "items"],
 };
 </script>

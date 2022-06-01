@@ -74,7 +74,7 @@
 
 <script>
 export default{
-el: '#app',
+ 
 props: ["items"],
   data () {
     return {

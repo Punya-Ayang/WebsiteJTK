@@ -57,7 +57,7 @@
 </style>
 <script>
 export default {
-  el: "#app",
+ 
   props: ["items", "path"],
   data: () => ({
     pageNo: 1,

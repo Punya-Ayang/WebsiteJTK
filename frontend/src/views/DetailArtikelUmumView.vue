@@ -26,7 +26,7 @@ export default Vue.extend({
     const id = this.$route.query.id;
     console.log(id);
     axios
-      .get("http://localhost:1337/artikels/" + id)
+      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/artikels/" + id)
       .then((res) => {
         this.props.item = res.data;
         console.log(this.props.item);

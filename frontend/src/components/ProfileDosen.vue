@@ -94,10 +94,10 @@
 import axios from "axios";
 
 export default{
-el: '#app',
+ 
   created() {
     axios
-      .get("http://localhost:1337/dosens")
+      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/dosens")
       .then((res) => {
         this.items = res.data;
         console.log(this.items);

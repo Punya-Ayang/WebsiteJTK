@@ -59,7 +59,7 @@
 import axios from "axios";
 
 export default {
-  el: "#app",
+ 
   created() {
     this.today = new Date();
     this.today = String(this.today.getFullYear()) + '-' + String(this.today.getMonth() + 1).padStart(2, '0') + '-'+ String(this.today.getDate()).padStart(2, '0')
@@ -67,7 +67,7 @@ export default {
     this.dates = [date, date];
     console.log(date);
     axios
-      .get("http://localhost:1337/acaras?tanggal_kegiatan_gt=" + date)
+      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/acaras?tanggal_kegiatan_gt=" + date)
       .then((res) => {
         this.items = res.data;
         console.log(this.items);

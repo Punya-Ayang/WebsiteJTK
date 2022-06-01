@@ -69,10 +69,10 @@
 import axios from "axios"
 
 export default{
-el: '#app',
+ 
   created() {
     axios
-      .get("http://localhost:1337/acaras?_start=0&_limit=3&_sort=tanggal_kegiatan:DESC")
+      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/acaras?_start=0&_limit=3&_sort=tanggal_kegiatan:DESC")
       .then((res) => {
         this.items = res.data;
         console.log(this.items);

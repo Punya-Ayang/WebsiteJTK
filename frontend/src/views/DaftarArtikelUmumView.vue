@@ -21,7 +21,7 @@ export default Vue.extend({
   },
   created() {
     axios
-      .get("http://localhost:1337/artikels")
+      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/artikels")
       .then((res) => {
         this.props.items = res.data;
         this.props.items.forEach(artikel => {

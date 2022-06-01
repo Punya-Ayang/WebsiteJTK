@@ -38,7 +38,7 @@
 </template>
 <script>
 export default {
-  el: "#app",
+ 
   data: () => ({
     dates: "2019-09-10",
     item:
