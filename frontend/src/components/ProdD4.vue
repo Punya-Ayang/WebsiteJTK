@@ -169,9 +169,9 @@
           </v-row>
         </v-container>
         <v-container class="mb-lg-2">
-          <a>&bull; Profil Lulusan</a>
+          <a href="/kurikulum-profil-lulusan-d4">&bull; Profil Lulusan</a>
           <br />
-          <a>&bull; Struktur mata Kuliah</a>
+          <a href="/struktur-matkul-d4">&bull; Struktur mata Kuliah</a>
         </v-container>
       </section>
       <v-spacer></v-spacer>

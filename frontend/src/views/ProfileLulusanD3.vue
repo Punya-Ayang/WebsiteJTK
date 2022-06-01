@@ -15,20 +15,20 @@
                 </div>
             </div>
             <div class="list-lulusan">
-                <h2>Programmer</h2>
-                <span>Profil lulusan teknik informatika berpotensi menjadi programmer yang mana dapat mengerjakan Dokumenter, Administrator, Programmer</span>
+                <v-text class="font-weight-bold">Programmer</v-text><p>
+                <v-text>Mengkonversi spesifikasi dan problem statement beserta prosedur suatu proyek menjadi logical flow yang deteil sehingga siap dicoding dalam bahasa pemrograman.</v-text></p>
             </div>
             <div class="list-lulusan">
-                <h2>Programmer</h2>
-                <span>Profil lulusan teknik informatika berpotensi menjadi programmer yang mana dapat mengerjakan Dokumenter, Administrator, Programmer</span>
+                <v-text class="font-weight-bold">Software Application Tester</v-text><p>
+                <v-text>Memonitor dan mengendalikan perangkat komputer untuk keperluan pemrosesan data bisnis, saintifik, engineering, dan data lain sesuai dengan instruksi pengoperasiannya.</v-text></p>
             </div>
             <div class="list-lulusan">
-                <h2>Programmer</h2>
-                <span>Profil lulusan teknik informatika berpotensi menjadi programmer yang mana dapat mengerjakan Dokumenter, Administrator, Programmer</span>
+                <v-text class="font-weight-bold">Technical Writer</v-text><p>
+                <v-text>Mendokumentasikan algoritma dan/program secara eksplisit dan implisit berdasar standar dokumentasi pengembangan perangkat lunak.</v-text></p>
             </div>
             <div class="list-lulusan">
-                <h2>Programmer</h2>
-                <span>Profil lulusan teknik informatika berpotensi menjadi programmer yang mana dapat mengerjakan Dokumenter, Administrator, Programmer</span>
+                <v-text class="font-weight-bold">Designer Software Application</v-text><p>
+                <v-text>Merancang prosedur, tata cara pemeliharaan sistem perangkat lunak dan troubleshooting dengan memperhatikan prinsip security dan K3 (Kesehatan dan keselamatan Kerja).</v-text></p>
             </div>            
         </v-container>
         </v-content>
