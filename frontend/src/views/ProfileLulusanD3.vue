@@ -2,7 +2,7 @@
     <div id="Profile-Lulusan-D3">
         <Navbar />
         <v-content>
-        <div class="headline-middle">
+        <div class="headline-middle mt-lg-16">
             <h1>Profile Lulusan</h1>
         </div>
         <v-container>

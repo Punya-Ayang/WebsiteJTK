@@ -5,7 +5,7 @@
         <v-container
           fill-height
           fluid
-          class="grey lighten-5"
+          class="grey lighten-5 mt-lg-16"
           style="
             height: 15vh;
             font-size: xx-large;
@@ -20,7 +20,7 @@
 
         <section>
             <v-container>
-                <v-row align="center" justify="center" class="mt-lg-10 mb-lg-10">
+                <v-row align="center" justify="center" class="mt-lg-4">
                     <v-img
                     max-height="670px"
                     max-width="1200px"

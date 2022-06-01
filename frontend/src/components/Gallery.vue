@@ -1,7 +1,7 @@
 <template>
   <v-app id="Gallery">
     <v-content>
-      <section class="headline-gl">
+      <section class="headline-gl mt-lg-16">
         <v-container>
           <h1>Gallery</h1>
         </v-container>

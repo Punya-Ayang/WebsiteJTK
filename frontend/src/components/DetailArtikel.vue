@@ -4,7 +4,7 @@
       <section>
         <v-container
           fluid
-          class="grey lighten-5"
+          class="grey lighten-5 mt-lg-16"
           style="
             height: 15vh;
             font-size: xx-large;

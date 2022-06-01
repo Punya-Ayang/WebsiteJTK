@@ -8,7 +8,7 @@
               fill-height
               fluid
               cols="12"
-              class="d-flex flex-no-wrap justify-space-between"
+              class="d-flex flex-no-wrap justify-space-between mt-lg-16"
               style="font-size: xx-large; justify-content: left; color: #003399"
             >
               <h1>{{ title }}</h1>

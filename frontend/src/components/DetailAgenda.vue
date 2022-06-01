@@ -2,10 +2,10 @@
   <v-app id="inspire">
     <v-content>
       <section style="background-color: #eeeeee; height: 115px">
-        <div></div>
+        <div class="mt-lg-16"></div>
         <!-- <v-container fluid class="grey lighten-5" style="height: 15vh; font-size: xx-large;text-align: center; color: #003399;"> -->
         <h1
-          class="text-no-wrap pt-lg-8 pb-lg-8"
+          class="text-no-wrap mt-lg-16 pb-lg-8"
           style="width: 100rem; grey lighten-9 height: 15vh; font-size: xx-large;text-align: center; color: #003399;"
         >
           Agenda

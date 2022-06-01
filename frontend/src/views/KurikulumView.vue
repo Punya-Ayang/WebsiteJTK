@@ -2,7 +2,7 @@
     <div id="kurikulum">
         <Navbar />
         <v-content>
-            <div class="headline-middle">
+            <div class="headline-middle mt-lg-16">
                 <h1>Kurikulum</h1>
             </div>
             <v-container>

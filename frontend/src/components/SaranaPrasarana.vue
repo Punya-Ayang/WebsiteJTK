@@ -3,7 +3,7 @@
     <v-content>
       <section>
         <v-container fluid>
-          <v-row align="center" justify="center" class="mt-lg-10 mb-lg-10">
+          <v-row align="center" justify="center" class="mt-lg-16 mb-lg-8">
             <v-card width="75%">
               <v-tabs background-color="#003399" dark center-active>
                 <v-tab>Sarana</v-tab>

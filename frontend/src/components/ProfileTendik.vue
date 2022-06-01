@@ -2,7 +2,7 @@
   <v-app id="inspire">
  <v-content>
      <v-section>
-         <div class="prof-tndk">
+         <div class="prof-tndk mt-lg-16">
             <h1>Profile Tendik</h1>
          </div>
      </v-section>

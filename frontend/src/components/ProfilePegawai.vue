@@ -2,7 +2,7 @@
   <v-app id="profile-pegawai">
  <v-content>
      <v-section>
-         <div class="headline-infopg">
+         <div class="headline-infopg mt-lg-16">
              <h1>Info Pegawai</h1>
          </div>
      </v-section>

@@ -2,7 +2,7 @@
   <v-app id="profile-dosen">
  <v-content>
      <v-section>
-         <div class="prof-dsn">
+         <div class="prof-dsn mt-lg-16">
             <h1>Profile Dosen</h1>
          </div>
      </v-section>

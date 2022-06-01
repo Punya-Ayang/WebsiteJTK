@@ -1,7 +1,7 @@
 <template>
   <div id="struktur-matkul-d3">
     <v-content>
-      <div class="headline-middle">
+      <div class="headline-middle mt-lg-16">
         <h1>Struktur Mata Kuliah</h1>
       </div>
       <v-container>

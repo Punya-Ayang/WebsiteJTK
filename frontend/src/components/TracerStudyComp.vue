@@ -1,7 +1,7 @@
 <template>
     <div id="tracer-study">
         <v-content>
-            <div class="headline-middle">
+            <div class="headline-middle mt-lg-16">
                 <h1>Hasil Tracer Study</h1>
             </div>
             <div class="subheadline-ts">
