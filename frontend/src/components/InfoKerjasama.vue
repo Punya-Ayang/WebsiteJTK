@@ -24,6 +24,7 @@
             <v-img
               max-height="670px"
               max-width="1200px"
+              class="mb-lg-4"
               src="../assets/Landing.png"
             ></v-img>
           </v-row>

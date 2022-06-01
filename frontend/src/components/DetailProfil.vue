@@ -27,6 +27,7 @@
                     <v-container class="pt-0">
                       <v-container class="pt-0"><h4>Nama</h4></v-container>
                       <v-container><h4>NIP</h4></v-container>
+                      <v-container><h4>NIDN</h4></v-container>
                       <v-container><h4>Email</h4></v-container>
                       <v-container><h4>No.HP</h4></v-container>
                       <v-container><h4>KBK</h4></v-container>
@@ -37,12 +38,14 @@
                       <v-container><h4>:</h4></v-container>
                       <v-container><h4>:</h4></v-container>
                       <v-container><h4>:</h4></v-container>
+                      <v-container><h4>:</h4></v-container>
                     </v-container>
                     <v-container class="pt-0 pl-lg-5">
                       <v-container class="pt-0"
                         ><h4 v-text="items.nama"></h4
                       ></v-container>
                       <v-container><h4 v-text="items.nip"></h4></v-container>
+                      <v-container><h4 v-text="items.nidn"></h4></v-container>
                       <v-container><h4 v-text="items.email"></h4></v-container>
                       <v-container><h4 v-text="items.no_hp"></h4></v-container>
                       <v-container><h4 v-text="items.bidang_keilmuan.bidang"></h4></v-container>
