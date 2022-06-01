@@ -15,6 +15,21 @@
             </v-card>
           </v-col>
         </v-row>
+
+        <v-col class="px-100 pb-10">
+          <div class="text-center">
+            <v-btn
+              medium
+              color="#E6E6E6"
+              dark
+              style="color: black"
+              to="/daftar-artikel"
+            >
+              Lihat Selengkapnya
+            </v-btn>
+          </div>
+        </v-col>
+
       </section>
     </v-content>
   </v-app>
