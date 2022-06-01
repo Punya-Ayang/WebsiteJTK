@@ -88,9 +88,9 @@
                 </v-row>
             </v-container>
             <v-container>
-                <a>&bull; Profil Lulusan</a>
+                <a href="/profile-lulusan-d3">&bull; Profil Lulusan</a>
                 <br>
-                <a>&bull; Struktur mata Kuliah</a>
+                <a href="/struktur-matkul-d3">&bull; Struktur mata Kuliah</a>
 
             </v-container>
         </section>
