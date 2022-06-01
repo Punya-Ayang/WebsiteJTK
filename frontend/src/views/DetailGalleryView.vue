@@ -23,7 +23,7 @@ export default Vue.extend({
     const id = this.$route.query.id;
     console.log(id);
     axios
-      .get("http://localhost:1337/galleries/" + id)
+      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/galleries/" + id)
       .then((res) => {
         this.props.item = res.data;
         this.props.item.media.forEach((Image) => {

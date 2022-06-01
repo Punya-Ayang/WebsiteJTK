@@ -53,7 +53,7 @@
 </style>
 <script>
 export default {
-  el: "#app",
+ 
   props: ["item", "images"],
   data() {
     return {

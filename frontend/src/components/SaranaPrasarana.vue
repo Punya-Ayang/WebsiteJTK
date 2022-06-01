@@ -58,10 +58,10 @@
 import axios from "axios";
 
 export default {
-  el: "#app",
+ 
   created() {
     axios
-      .get("http://localhost:1337/sarana-dan-prasarana")
+      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/sarana-dan-prasarana")
       .then((res) => {
         this.img_sarana = res.data.sarana;
         this.img_prasarana = res.data.prasarana;

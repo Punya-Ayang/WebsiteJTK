@@ -98,7 +98,7 @@
 </template>
 <script>
 export default {
-  el: "#app",
+ 
   props:["dialog", "path", "article", "items"],
 }
 </script>

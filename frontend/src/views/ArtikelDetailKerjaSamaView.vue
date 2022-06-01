@@ -34,7 +34,7 @@ export default Vue.extend({
     const id = this.$route.query.id;
     console.log(id);
     axios
-      .get("http://localhost:1337/kerja-samas/" + id)
+      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/kerja-samas/" + id)
       .then((res) => {
         this.props.item = res.data;
         this.props.item.date = this.props.item.date + " / Kerja Sama";

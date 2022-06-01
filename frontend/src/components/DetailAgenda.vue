@@ -64,12 +64,12 @@
 import axios from "axios";
 
 export default {
-  el: "#app",
+ 
   created() {
     const id = this.$route.query.id;
     console.log(id);
     axios
-      .get("http://localhost:1337/acaras/" + id)
+      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/acaras/" + id)
       .then((res) => {
         this.item = res.data;
         console.log(this.item);

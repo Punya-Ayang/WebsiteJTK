@@ -49,7 +49,7 @@ export default {
     const id = this.$route.query.id;
     console.log(id);
     axios
-      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/artikels/" + id)
+      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.netartikels/" + id)
       .then((res) => {
         this.item = res.data;
         console.log(this.item);
@@ -58,7 +58,7 @@ export default {
         console.error(err);
       });
   },
-  el: "#app",
+ 
   data: () => ({
     item: []
   }),

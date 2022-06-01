@@ -48,7 +48,7 @@ export default {
 components: {
   TextMarkdown
 },
-  el: "#app",
+ 
   props: ["item"],
 };
 </script>

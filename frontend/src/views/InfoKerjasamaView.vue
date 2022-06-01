@@ -22,7 +22,7 @@ export default Vue.extend({
   created() {
     axios
       .get(
-        "http://localhost:1337/kerja-samas?_start=0&_limit=2&_sort=date:DESC"
+        "https://cms-web-jtk-kartikamilenda.cloud.okteto.net/kerja-samas?_start=0&_limit=2&_sort=date:DESC"
       )
       .then((res) => {
         this.props.items = res.data;

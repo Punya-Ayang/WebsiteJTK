@@ -24,7 +24,7 @@
 import axios from "axios"
 
 export default {
-  el: "#app",
+ 
   data() {
     return {
       dialog: false,
@@ -33,7 +33,7 @@ export default {
   },
   created() {
     axios
-      .get("http://localhost:1337/artikels?_start=0&_limit=3")
+      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/artikels?_start=0&_limit=3")
       .then((res) => {
         this.items = res.data;
         this.items.forEach((artikel) => {

@@ -30,7 +30,7 @@ export default Vue.extend({
     this.search = this.$route.query.search;
     console.log(this.search);
     await axios
-      .get("http://localhost:1337/artikels?title_contains=" + this.search)
+      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/artikels?title_contains=" + this.search)
       .then((res) => {
         this.props.items = res.data;
         this.props.items.forEach(artikel => {

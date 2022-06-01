@@ -64,12 +64,12 @@
 import axios from "axios";
 
 export default {
-  el: "#app",
+ 
   created() {
     const id = this.$route.query.id;
     console.log(id);
     axios
-      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/prestasis" + id)
+      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.netprestasis" + id)
       .then((res) => {
         this.article = res.data;
         console.log(this.article);

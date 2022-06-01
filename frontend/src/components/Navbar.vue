@@ -41,6 +41,7 @@
               v-for="(item, index) in akademik"
               :key="index"
               :to="item.link"
+              
             >
               <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item>
@@ -118,7 +119,7 @@ export default {
     onEnter() {
       console.log(this.searchItem);
       this.$router.push("/hasil-pencarian?search=" + this.searchItem);
-    },
+    }
   },
 };
 </script>

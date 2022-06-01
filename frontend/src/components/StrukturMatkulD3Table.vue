@@ -44,7 +44,7 @@ import axios from "axios";
 export default {
   created() {
     axios
-      .get("http://localhost:1337/struktur-mata-kuliahs?prodi=D3&_sort=semester:ASC")
+      .get("https://cms-web-jtk-kartikamilenda.cloud.okteto.net/struktur-mata-kuliahs?prodi=D3&_sort=semester:ASC")
       .then((res) => {
         this.matakuliah = res.data;
         for (let i = 0; i < this.matakuliah.length; i++) {

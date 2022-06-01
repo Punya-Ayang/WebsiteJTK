@@ -98,7 +98,7 @@
 </template>
 <script>
 export default {
-  el: "#app",
+ 
   props: ["title", "subtitle", "page", "dialog", "items", "path"],
   data: () => ({
     pageNo: 1,
