@@ -22,6 +22,7 @@
         <v-container>
           <v-row align="center" justify="center" class="mt-lg-10 mb-lg-10">
             <v-img
+              class = "mt-lg-16"
               max-height="670px"
               max-width="1200px"
               src="../assets/Landing.png"

@@ -6,7 +6,7 @@
                 <h1>Profile, Visi, dan Misi</h1>
             </div>
             <v-container>
-                <v-img class="banner mt-n12" src="../assets/Landing.png"></v-img>
+                <v-img class="banner mt-n12" src="https://res.cloudinary.com/marssn/image/upload/v1654070619/IMG_8137_f42c7c3c5c.jpg"></v-img>
                 <div class="content pt-5 mt-4">
                     <p>
                         Jurusan Teknik Komputer dan Informatika Politeknik Negeri Bandung (lebih dikenal dengan singkatan JTK) merupakan jurusan penyelenggara pendidikan diploma bidang teknologi informasi pertama di Indonesia. Jurusan ini telah menyelenggarakan pendidikan D-3 bidang teknik komputer dan informatika sejak 1977 dan pendidikan D-4 sejak 2009.

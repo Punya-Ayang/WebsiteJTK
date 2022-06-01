@@ -22,9 +22,9 @@
         <v-container fluid>
           <v-row align="center" justify="center" class="mt-lg-4">
             <v-img
-              max-height="670px"
+              max-height="400px"
               max-width="1200px"
-              src="../assets/Landing.png"
+              src="https://res.cloudinary.com/marssn/image/upload/v1654069312/IMG_8034_59861eb0f6.jpg"
             ></v-img>
           </v-row>
         </v-container>
