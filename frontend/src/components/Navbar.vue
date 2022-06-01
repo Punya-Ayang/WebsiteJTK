@@ -1,5 +1,5 @@
 <template>
-  <v-app id="navbar">
+  <v-app-bar  fixed id="navbar">
     <v-toolbar dark color="#003399" style="max-height: 35vh">
       <v-toolbar-title class="white--text">
         <div
@@ -8,7 +8,7 @@
         >
           <router-link to="/">
             <img
-              class="logo"
+              class="logo ml-4"
               src="../assets/logoPolban.png"
               width="50x"
               href="/"
@@ -81,12 +81,15 @@
         ></v-select>
       </v-col>
     </v-toolbar>
-  </v-app>
+  </v-app-bar>
 </template>
 
 <style>
 .v-application--wrap {
   min-height: unset;
+}
+.v-toolbar__content{
+  padding:0px !important;
 }
 </style>
 <script>
