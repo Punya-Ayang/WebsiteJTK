@@ -21,7 +21,7 @@
                 <div class="subheadline">
                     <h2>Visi dan Misi</h2>
                 </div>
-                <div class="content">
+                <div class=" content">
                     <p>
                         JTK memiliki misi untuk menjadi jurusan unggulan dan terdepan di bidang pengkajian, penerapan dan pengembangan teknologi informasi, yang diakui baik di tingkat nasional maupun internasional.
                     </p>
@@ -65,10 +65,12 @@
     padding-bottom: 20px;
     margin-bottom: 10px;
     padding-top: 20px;
+    text-align: center;
 }
 .content{
     padding-bottom: 5px;
     font-size: large;
+    text-align: justify;
 }
 
 </style>

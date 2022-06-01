@@ -15,7 +15,7 @@
     "nama": {
       "type": "string"
     },
-    "nip": {
+    "nip_nidn": {
       "type": "string",
       "required": true,
       "unique": true

@@ -26,18 +26,27 @@
               <v-row
               >
                 <v-col class="content">
-                      <v-img src="../../assets/MengapaJTK.png"></v-img>
+                      <v-img 
+                      max-width="250"
+                      max-height="auto"                      
+                      src="../../assets/MengapaJTK.png"></v-img>
                       <h2>Mengapa JTK?</h2>
                       <p>Jurusan penyelenggara pendidikan diploma teknologi informasi yang pertama di Indonesia. </p>
                 </v-col>
                 <v-col class="content pt-12">
-                      <v-img src="../../assets/TentangProdi.png"></v-img>
+                      <v-img 
+                      max-width="250"
+                      max-height="auto"  
+                      src="../../assets/TentangProdi.png"></v-img>
                       <h2>Tentang Prodi</h2>
                       <p>Terdapat dua Prodi</p>
                       <p> D-3 Prodi Teknik Informatika & D-4 Prodi Teknik Informatika</p>
                 </v-col>
                 <v-col class="content">
-                      <v-img src="../../assets/KuliahdiJTK.png"></v-img>
+                      <v-img 
+                      max-width="250"
+                      max-height="auto"  
+                      src="../../assets/KuliahdiJTK.png"></v-img>
                       <h2>Bagaimana Kuliah Di JTK?</h2>
                       <p>Menyediakan Fasilitas Sarana dan Prasarana yang menopang pembelajaran di JTK</p>
                 </v-col>
