@@ -20,6 +20,7 @@
                 max-width="360"
                 outlined
                 color="ffffff"
+                :href="path + item.id"
               >
                 <v-list-item three-line>
                   <v-list-item-avatar tile size="100"
@@ -80,6 +81,7 @@ export default {
     today: [],
     dates: [],
     items: [],
+    path: "/detail-agenda?id="
   }),
   computed: {
     dateRangeText() {
