@@ -89,7 +89,7 @@
           </v-col>
           <v-col class="mb-lg-5 px-100 pt-10">
             <div>
-              <v-text>Jika tertarik untuk melakukan kerjasama, klik link berikut <a href>bit.ly/kerja-sama-jtk</a></v-text>
+              <v-text>Jika tertarik untuk melakukan kerjasama, klik link berikut <a href="https://forms.gle/C17vGc6Uwc5BHb7S6">bit.ly/kerja-sama-jtk</a></v-text>
             </div>
           </v-col>
         </v-container>
