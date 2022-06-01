@@ -109,7 +109,7 @@ el: '#app',
   data () {
     return {
       dialog: false,
-      path: "http://localhost:8080/profile-dosen/detail?id=",
+      path: "/profile-dosen/detail?id=",
       items:[]
     }
   }

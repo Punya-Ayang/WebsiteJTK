@@ -36,7 +36,7 @@ export default Vue.extend({
         page: 1,
         dialog: false,
         items: [],
-        path: "http://localhost:8080/detail-gallery?id=",
+        path: "/detail-gallery?id=",
       },
     };
   },

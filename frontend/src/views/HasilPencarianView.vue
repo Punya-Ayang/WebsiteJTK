@@ -1,7 +1,7 @@
 <template>
   <div id="hasil-pencarian">
     <Navbar />
-    <div v-if="props.items.length === 1 && props.items[0].title === ''">
+    <div v-if="props.items.length === 0">
       <DaftarPencarian
         v-bind="props"
       />
@@ -58,7 +58,7 @@ export default Vue.extend({
           date: '',
           id: ''
         }],
-        path: "http://localhost:8080/detail-artikel-umum?id=",
+        path: "/detail-artikel-umum?id=",
       },
     };
   },

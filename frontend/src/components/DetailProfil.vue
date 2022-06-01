@@ -51,20 +51,6 @@
                   <v-container>
                     <div>
                       <v-container class="pt-0 pl-lg-5">
-                        <h2>Expertise</h2>
-                      </v-container>
-                    </div>
-                    <div class="pt-0 pl-lg-5">
-                      <ul>
-                        <li>Data Science</li>
-                        <li>Web Developer</li>
-                        <li>Game Developer</li>
-                      </ul>
-                    </div>
-                  </v-container>
-                  <v-container>
-                    <div>
-                      <v-container class="pt-0 pl-lg-5">
                         <h2>Mata Kuliah yang Diampu</h2>
                       </v-container>
                     </div>

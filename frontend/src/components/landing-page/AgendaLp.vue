@@ -32,15 +32,15 @@
             <v-list-item-avatar
               tile
               size="80"
-              :src="item.src"
+              :src="item.image.url"
             >
-            <v-img :src="item.src"></v-img>
+            <v-img :src="item.image.url"></v-img>
             </v-list-item-avatar>
 
             <v-list-item-content>
-              <v-list-item-title class="text-h5" v-text="item.title"> 
+              <v-list-item-title class="text-h5" v-text="item.judul_kegiatan"> 
               </v-list-item-title>
-              <v-list-item-subtitle v-text="item.date"></v-list-item-subtitle>
+              <v-list-item-subtitle v-text="item.tanggal_kegiatan"></v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </v-card>
@@ -66,28 +66,25 @@
 </template>
 
 <script>
+import axios from "axios"
+
 export default{
 el: '#app',
+  created() {
+    axios
+      .get("http://localhost:1337/acaras?_start=0&_limit=3&_sort=tanggal_kegiatan:DESC")
+      .then((res) => {
+        this.items = res.data;
+        console.log(this.items);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  },
   data () {
     return {
       dialog: false,
-      items:[
-        {
-          src: 'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-          title: 'Webinar Cloud Computing',
-          date:'11-11-11'
-        },
-        {
-          src: 'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-          title: 'Webinar Cloud Computing',
-          date:'11-11-11'
-        },
-        {
-          src: 'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-          title: 'Webinar Cloud Computing',
-          date:'11-11-11'
-        }
-      ]
+      items:[]
     }
   }
 };

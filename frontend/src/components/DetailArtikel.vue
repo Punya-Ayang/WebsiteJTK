@@ -32,8 +32,8 @@
       <v-spacer></v-spacer>
       <section>
         <v-container class="mb-lg-10">
-          <v-row align="center" justify="center">
-            <p v-text="item.body"></p>
+          <v-row align="center" justify="left">
+            <TextMarkdown v-bind="item" />
           </v-row>
         </v-container>
       </section>
@@ -42,7 +42,12 @@
   </v-app>
 </template>
 <script>
+import TextMarkdown from "../components/TextMarkdown.vue"
+
 export default {
+components: {
+  TextMarkdown
+},
   el: "#app",
   props: ["item"],
 };

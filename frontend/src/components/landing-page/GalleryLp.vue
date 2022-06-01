@@ -1,35 +1,45 @@
 <template>
-<v-app>
+  <v-app>
     <v-content>
-         <section>
-          <div 
+      <section>
+        <div
           class="text-md-center pt-10"
-          style="
-          color: #003399;
-          font-size: x-large;">
+          style="color: #003399; font-size: x-large"
+        >
           <h1>Gallery</h1>
-          </div>
-         <v-row no-gutters>
+        </div>
+        <v-row>
           <v-col
-           v-for="(item, i) in gallery"
-           :key="i"
-            cols="6"
+            v-for="(item, i) in items"
+            :key="`asset_index_${i}`"
+            cols="20"
             sm="4"
           >
-           <v-card
-            :loading="loading"
-            class="mx-auto my-12"
-            max-width="374"
-          >
-          <v-img
-            height="250"
-            :src="item.src"
-          ></v-img>
-           </v-card>
-          </v-col>
-          </v-row>
+            <v-card class="mx-auto" max-width="400">
+              <a :href="path + item.id">
+                <v-img
+                  class="white--text align-end"
+                  height="250px"
+                  :src="item.media[0].url"
+                >
+                </v-img>
+              </a>
+              <v-card-subtitle class="pb-0"> Created By </v-card-subtitle>
 
-          <v-col class="px-100 pb-10">
+              <v-card-text class="text--primary">
+                <div>
+                  <p v-text="item.judul"></p>
+                </div>
+
+                <div>
+                  <p v-text="item.tanggal"></p>
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+
+        <v-col class="px-100 pb-10">
           <div class="text-center">
             <v-btn
               medium
@@ -44,27 +54,31 @@
         </v-col>
       </section>
     </v-content>
-</v-app>
+  </v-app>
 </template>
 
 <script>
-export default{
-el: '#app',
-  data () {
+import axios from "axios"
+
+export default {
+  el: "#app",
+  created() {
+    axios
+      .get("http://localhost:1337/galleries")
+      .then((res) => {
+        this.items = res.data;
+        console.log(this.items)
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  },
+  data() {
     return {
       dialog: false,
-      gallery:[
-        {
-          src:'../../assets/gallery1.png'
-        },
-        {
-          src:'../../assets/gallery1.png'
-        },
-        {
-         src:'../../assets/gallery1.png'
-        }
-      ]
-    }
-  }
+      items: [],
+      path: "/detail-gallery?id=",
+    };
+  },
 };
 </script>

@@ -81,7 +81,7 @@
         </v-container>
       </section>
       <div
-        v-if="items.length === 1 && items[0].title === ''"
+        v-if="items.length === 0"
         class="text-center pt-lg-10 pb-lg-10 mt-lg-10 mb-lg-10"
       >
         <h3 class="font-weight-bold">Not Found</h3>

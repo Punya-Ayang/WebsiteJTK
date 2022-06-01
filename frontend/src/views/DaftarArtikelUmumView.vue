@@ -40,7 +40,7 @@ export default Vue.extend({
         page: 1,
         dialog: false,
         items: [],
-        path: "http://localhost:8080/detail-artikel-umum?id="
+        path: "/detail-artikel-umum?id="
       },
     };
   },

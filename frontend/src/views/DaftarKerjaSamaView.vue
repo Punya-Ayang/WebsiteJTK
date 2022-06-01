@@ -42,7 +42,7 @@ export default Vue.extend({
         page: 1,
         dialog: false,
         items: [],
-        path: "http://localhost:8080/artikel-detail-kerjasama?id=",
+        path: "/artikel-detail-kerjasama?id=",
     },
   }),
   name: "DaftarPrestasiJTKView",
